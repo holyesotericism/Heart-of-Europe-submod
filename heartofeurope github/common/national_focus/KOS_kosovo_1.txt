@@ -103,6 +103,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		SER = {add_opinion_modifier= {
+		target = KOS
+		modifier = small_increase
+		   }
+	        }
+
+	   }
 	}
 
 	#Focus for Normalise Relations with Serbia
@@ -120,7 +128,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		completion_reward = {
+		SER = {add_opinion_modifier= {
+		target = KOS
+		modifier = large_increase
+		      }
+		   }
+
+		}
+	      }
 
 	#Focus for Territory Swap
 	focus = {
@@ -405,6 +421,12 @@ is_puppet_of= SER }
 		prerequisite = { focus = KOS_no_negotiations }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = SER
+        type = annex_country
+                       }
 		}
 	}
 
