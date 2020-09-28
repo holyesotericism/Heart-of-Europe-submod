@@ -122,7 +122,7 @@ HUN_pathofequality
 			}
 		}
 		
-		"DEN"={
+		"ROM"={
 			minor = yes
 			history = "DEN_GATHERING_STORM_DESC"
 			ideology = social_democrat
@@ -135,7 +135,7 @@ HUN_pathofequality
 				DEN_venerate_queen
 			}
 		}
-		"ETH"={
+		"POL"={
 			minor = yes
 			history = "ETH_GATHERING_STORM_DESC"
 			ideology = democratic_socialist
@@ -148,7 +148,7 @@ HUN_pathofequality
 				ETH_declare_mengistu_innocent
 			}
 		}
-		"FIN"={
+		"CZE"={
 			minor = yes
 			history = "FIN_GATHERING_STORM_DESC"
 			ideology = social_democrat
@@ -162,7 +162,7 @@ HUN_pathofequality
 				FIN_david_against_goliath
 			}
 		}
-		"ICE"={
+		"SLO"={
 			minor = yes
 			history = "ICE_GATHERING_STORM_DESC"
 			ideology = social_liberal
@@ -174,7 +174,7 @@ HUN_pathofequality
 				ICE_leave_nato
 			}
 		}
-		"ITA"={
+		"AUS"={
 			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = democratic_socialist
@@ -189,7 +189,7 @@ HUN_pathofequality
 				ITA_anti_mafia_measures
 			}
 		}
-		"NOR"={
+		"BUL"={
 			minor = yes
 			history = "NOR_GATHERING_STORM_DESC"
 			ideology = conservative
@@ -201,7 +201,47 @@ HUN_pathofequality
 				NOR_the_union_of_sweden_norway
 			}
 		}
-		"SWE"={
+		"SER"={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas = {
+				idea_eu_member
+			}
+			focuses = {
+				SWE_improve_the_stridsvagn_122
+				SWE_northern_nationalism
+				SWE_the_emperor_of_sweden
+			}
+		}
+
+		"CRO"={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas = {
+				idea_eu_member
+			}
+			focuses = {
+				SWE_improve_the_stridsvagn_122
+				SWE_northern_nationalism
+				SWE_the_emperor_of_sweden
+			}
+		}
+		"BOS"={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas = {
+				idea_eu_member
+			}
+			focuses = {
+				SWE_improve_the_stridsvagn_122
+				SWE_northern_nationalism
+				SWE_the_emperor_of_sweden
+			}
+		}
+		"SLV"={
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
 			ideology = social_democrat

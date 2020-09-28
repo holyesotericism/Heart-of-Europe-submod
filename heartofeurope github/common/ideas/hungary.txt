@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		
 		idea_hun_corruption = {
-			picture = high_society
+			picture = corruption
 		
 			allowed = { always = yes }
 			allowed_civil_war = { always = yes }
@@ -44,7 +44,7 @@ ideas = {
 				}
 				
 			idea_hun_national_debt = {
-			picture = high_society
+			picture = national_debt
 		
 			allowed = { always = yes }
 			allowed_civil_war = { always = yes }
@@ -60,7 +60,7 @@ ideas = {
 				}
 				
 		idea_hun_national_debt_2 = {
-			picture = high_society
+			picture = national_debt
 		
 			allowed = { always = yes }
 			allowed_civil_war = { always = yes }
@@ -147,6 +147,31 @@ ideas = {
 			}
 				}
 				
+				idea_hun_communism_prosper = {
+			picture = communism_prosper
+		
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.10
+			}
+				}
+				
+				idea_hun_communism_fade = {
+			picture = communism_fade
+		
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = -0.10
+			}
+				}				
+				
+				
 				idea_hun_communism_reform = {
 			picture = communism
 		
@@ -193,7 +218,7 @@ ideas = {
 				}
 		
 								idea_welfare_state = {
-			picture = social_democrat
+			picture = welfare_state
 			allowed = { always = yes }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -215,9 +240,9 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				political_power_factor = -0.1
-				production_speed_buildings_factor = -0.12
-				industrial_capacity_factory = -0.3
+				political_power_factor = -0.05
+				production_speed_buildings_factor = -0.07
+				industrial_capacity_factory = -0.10
 				
 			}
 				}
@@ -229,9 +254,28 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.02
-				political_power_factor = -0.03
-				production_speed_buildings_factor = -0.06
-				industrial_capacity_factory = -0.15
+				political_power_factor = -0.02
+				production_speed_buildings_factor = -0.03
+				industrial_capacity_factory = -0.6
+				
+			}
+				}
+				
+								idea_multiethnic_state = {
+			picture = language
+		
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.07
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.07
+				research_speed_factor = -0.1
+				training_time_factor = 0.1
+				army_org_factor = -0.05
 				
 			}
 				}

@@ -3,14 +3,15 @@ reintegrate_slovakia = {
 	south_slovakia_name = 
 	{ fire_only_once = yes
 	 available =
-	{ HUN = { has_full_control_of_state = 664 } }
-	visible = { HUN = { has_full_control_of_state = 664 } }
+	{ tag = HUN HUN = { has_full_control_of_state = 664 } }
+	visible = { tag = HUN HUN = { has_full_control_of_state = 664 } }
 	 complete_effect = { 
 	 set_province_name = {
     id = 6573
     name = "Kassa"
 	}
-	SLO = { remove_state_core = 664 }
+	SLO = { remove_state_core = 664
+			remove_state_core = 931 }
 	
 	}	
 	}
@@ -22,7 +23,8 @@ reintegrate_slovakia = {
 	  SLO = { is_puppet_of = HUN }
           }
 	complete_effect = {
-	HUN = { transfer_state = 664 }
+	HUN = { transfer_state = 664
+			transfer_state = 931 }
 	}
 	}
 

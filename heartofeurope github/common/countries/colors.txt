@@ -37,7 +37,7 @@ HOL = {
 #	color_ui = rgb { 0 0 255 }
 #}
 CZE = {	
-	color = rgb { 54 167 156 }
+	color = rgb { 98 173 191 }
 	color_ui = rgb { 70 217 203 }
 }
 POL = {
@@ -69,7 +69,7 @@ ITA = {
 	color_ui = rgb { 87 165 82 }
 }
 ROM = {
-	color = rgb { 215 196 72 }
+	color = rgb { 203 175 27 }
 	color_ui = rgb { 255 255 120 }
 }
 SWI = {
@@ -302,7 +302,7 @@ OMA = {
 	color_ui = rgb { 210 0 0 }
 }
 SLO = {
-	color = rgb { 158  161  188 }
+	color = rgb { 137 151 191 }
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
@@ -931,6 +931,51 @@ VNT = {
 NEG = {
 	color = rgb { 121 119 206 }
 	color_ui = rgb { 121 119 206 }
+}
+
+BAN = {
+	color = rgb { 143 101 71 }
+	color_ui = rgb { 143 101 71 }
+}
+
+VOJ = {
+	color = rgb { 58 92 166 }
+	color_ui = rgb { 58 92 166 }
+}
+
+SEK = {
+	color = rgb { 116 193 198  }
+	color_ui = rgb { 198 133 44 }
+}
+
+
+TRS = {
+	color = rgb { 198 133 44 }
+	color_ui = rgb { 198 133 44 }
+}
+
+RUT = {
+	color = rgb { 147 213 206 }
+	color_ui = rgb { 147 213 206 }
+}
+GAL = {
+	color = rgb { 212 169 185 }
+	color_ui = rgb { 212 169 185 }
+}
+
+RRT = {
+	color = rgb { 203 55 54 }
+	color_ui = rgb { 141 36 35 }
+}
+
+BUK = {
+	color = rgb { 137 191 28 }
+	color_ui = rgb { 137 191 28 }
+}
+
+SRP = {
+	color = rgb { 84 112 157 }
+	color_ui = rgb { 84 112 157 }
 }
 
 D01 = {
