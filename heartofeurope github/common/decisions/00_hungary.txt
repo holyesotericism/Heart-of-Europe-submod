@@ -1,0 +1,33 @@
+reintegrate_slovakia = {
+
+	south_slovakia_name = 
+	{ fire_only_once = yes
+	 available =
+	{ HUN = { has_full_control_of_state = 664 } }
+	visible = { HUN = { has_full_control_of_state = 664 } }
+	 complete_effect = { 
+	 set_province_name = {
+    id = 6573
+    name = "Kassa"
+	}
+	SLO = { remove_state_core = 664 }
+	
+	}	
+	}
+	south_slovakia = {
+	fire_only_once = yes
+	icon = economy
+	visible = {
+               tag = HUN
+	  SLO = { is_puppet_of = HUN }
+          }
+	complete_effect = {
+	HUN = { transfer_state = 664 }
+	}
+	}
+
+
+
+
+
+}
