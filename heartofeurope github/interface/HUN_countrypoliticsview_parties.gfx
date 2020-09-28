@@ -1,0 +1,28 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_ideology_HUN_conservative_group"
+		texturefile = "gfx/interface/ideologies/HUN/fidesz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_HUN_nationalist_group"
+		texturefile = "gfx/interface/ideologies/HUN/jobbik.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_HUN_progressive_group"
+		texturefile = "gfx/interface/ideologies/HUN/lmp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_HUN_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/HUN/mszp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_HUN_communist_group"
+		texturefile = "gfx/interface/ideologies/HUN/mm.dds"
+	}
+	
+}

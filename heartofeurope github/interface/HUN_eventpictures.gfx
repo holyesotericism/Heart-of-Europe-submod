@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+spriteType = {
+		name = "GFX_2006_tank"
+		texturefile = "gfx/event_pictures/hungary/2006_tank.dds"
+	}		
+}	
