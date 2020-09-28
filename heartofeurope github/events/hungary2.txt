@@ -1,0 +1,113 @@
+
+add_namespace = hungary2
+
+		country_event = {
+	id = hungary2.1
+		title = hungary2.1.t
+		desc = hungary2.1.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary2.1.a
+	HUN = { add_stability = -0.05 }
+	option = {
+	
+	name = hungary2.1.b 
+	ai_chance = { factor = 50 }
+	HUN = { create_wargoal = {
+    type = annex_everything
+    target = SLO
+	}
+	}
+	}
+	}
+	}
+	
+		country_event = {
+	id = hungary2.2 
+        title = hungary2.2.t
+        desc = hungary2.2.d
+
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 30 }
+	name = hungary2.2.a
+	release = VOJ
+	 }
+	option = {
+	ai_chance = { factor = 70 }
+	name = hungary2.2.b
+	HUN = {
+	country_event = { id = hungary2.3 days = 1 }
+	}
+	}
+	}
+	
+	
+		country_event = {
+	id = hungary2.3
+		title = hungary2.3.t
+		desc = hungary2.3.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary2.3.a
+	}
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary2.3.b
+	HUN = { create_wargoal = {
+    type = annex_everything
+    target = SER
+	}
+	}
+	}
+	}
+	
+		country_event = {
+	id = hungary2.4
+		title = hungary2.4.t
+		desc = hungary2.4.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary2.4.a
+	HUN = { add_stability = 0.1 }
+	}
+	}
+	
+			country_event = {
+	id = hungary2.5
+		title = hungary2.5.t
+		desc = hungary2.5.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary2.5.a
+	HUN = { add_stability = 0.1 }
+	
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary2.5.b
+	HUN = { create_wargoal = {
+    type = annex_everything
+    target = SLO
+	}
+	}
+	}
+	}
+	}
