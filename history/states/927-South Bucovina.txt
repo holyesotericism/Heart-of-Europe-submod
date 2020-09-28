@@ -1,0 +1,17 @@
+state={
+	id=927
+	name="STATE_927"
+	provinces={
+		6761 11689 
+	}
+history = {
+
+owner = ROM
+		buildings = {
+			infrastructure = 2
+}
+add_core_of = ROM
+}
+	manpower=11110
+	buildings_max_level_factor=1.000
+}
