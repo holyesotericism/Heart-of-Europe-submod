@@ -11,6 +11,7 @@ state={
 		}
 
 	victory_points = { 11622 5 }
+	victory_points = { 6679 3 }
 		add_core_of = ROM
 
 	}
@@ -18,7 +19,7 @@ state={
 	provinces={
 		676 693 3665 3694 9619 11622 
 	}
-	manpower=200000
+	manpower=250000
 	buildings_max_level_factor=1.000
 	state_category=state_level_2
 }
