@@ -95,3 +95,16 @@
  reintegrate_slovakia:0 "Reintegrate Slovakia"
  south_slovakia:0 "Request Adjustments to Borders"
  south_slovakia_name:0 "Reintegrate South Slovakia"
+ #Zapadoslava Descisions
+ zapadoslava:0 "Proclaim the formation Zapadoslavia"
+ #Yugoslav reunification
+ yugoslavia:0 "Restore Yugoslavia"
+ reunification:0 "Reunification"
+ #Romania
+ release_bnat:0 "Release Banat"
+ release_transylvania:0 "Release Transylvania"
+ banat:0 "Releasables"
+ #Czechoslovakia
+ cze_reunification:0 "Czechoslovak Reunification"
+ slovakoczechia:0 "Proclaim Slovakoczechia"
+ czechoslovakia:0 "Restore Czechoslovakia"
