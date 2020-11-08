@@ -50,6 +50,20 @@ ZAP = {
 	color = rgb { 194 103 160 }
 	color_ui = rgb { 194 103 160 }
 }
+ROM_GREATER = {
+	color = rgb { 234 183 21 }
+	color_ui = rgb { 234 183 21 }
+}
+
+DAC = {
+	color = rgb { 229 141 15 }
+	color_ui = rgb { 229 141 15 }
+}
+
+CARP = {
+	color = rgb { 161 112 80   }
+	color_ui = rgb { 229 141 15 }
+}
 
 AUS_NOT_WHITE = {	
 	color = rgb { 249 126 98 }
