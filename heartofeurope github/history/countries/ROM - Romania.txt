@@ -144,11 +144,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ion Iliescu"
 	picture = "Ion_Iliescu.dds"
-	ideology = social_democrat_ideology
+	ideology = neutral_social
 }
 
 create_country_leader = {
-	name = "Petre Roman"
+	name = "Mugur Isarescu"
 	picture = "Petre_Roman.dds"
 	ideology = christian_democrat
 }
@@ -177,6 +177,11 @@ create_country_leader = {
 	ideology = green
 }
 
+create_country_leader = {
+	name = "Dan Diaconescu"
+	picture = "Dan_Diaconescu.dds"
+	ideology = democratic_socialist_ideology
+}
 create_country_leader = {
 	name = "Dan Diaconescu"
 	picture = "Dan_Diaconescu.dds"

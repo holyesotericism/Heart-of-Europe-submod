@@ -19,7 +19,7 @@ owner = HUN
 		}
 add_core_of = HUN
 }
-	manpower=200000
+	manpower=1400000
 	buildings_max_level_factor=1.000
 	state_category=state_level_3
 }

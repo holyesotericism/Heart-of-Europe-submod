@@ -8,15 +8,19 @@ state={
 
 	history={
 		owner = SLO
-		victory_points = {
-			9692 10 
-		}
+
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 3
 
+		}
+		victory_points = {
+			9692 15
+		}
+		victory_points = {
+			3484 1 
 		}
 
 	}
