@@ -1,0 +1,8 @@
+﻿spriteTypes = {
+
+    spriteType = {
+        name = "GFX_czechoslovakia"
+        texturefile = "gfx/interface/decisions/image_generic_czechoslovakia.dds"
+    }
+
+}
