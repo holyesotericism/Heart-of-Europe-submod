@@ -14,6 +14,7 @@ OR = {
 }
 cze_reunification = {
      icon = generic_prospect_for_resources
+	picture = GFX_czechoslovakia
      available = {
 OR = { 
 	tag = SLO 
@@ -34,5 +35,13 @@ zapadoslava = {
      available = {
 OR = { 
 	tag = POL
+     } }
+}
+carpathia = {
+     icon = generic_prospect_for_resources
+     available = {
+OR = { 
+	tag = HUN
+	tag = ROM
      } }
 }

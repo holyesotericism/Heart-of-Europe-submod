@@ -10,11 +10,42 @@ reintegrate_slovakia = {
     id = 6573
     name = "Kassa"
 	}
+set_province_name = {
+    id = 11679
+    name = VICTORY_POINTS_HUN_komarno
+	}
 	SLO = { remove_state_core = 664
 			remove_state_core = 931 }
 	
 	}	
 	}
+	slovakia_name = 
+	{ fire_only_once = yes
+	 available =
+	{ tag = HUN HUN = { has_full_control_of_state = 70 has_full_control_of_state = 71 has_full_control_of_state = 932 } }
+	visible = { tag = HUN HUN = { has_full_control_of_state = 70 has_full_control_of_state = 71 has_full_control_of_state = 932 } }
+	 complete_effect = { 
+	 set_province_name = {
+    id = 9692
+    name = "Pozsony"
+	}
+set_province_name = {
+    id = 3484
+    name = VICTORY_POINTS_HUN_trencin
+	}
+set_province_name = {
+    id = 9551
+    name = "Zsolna"
+	}
+set_province_name = {
+    id = 3581
+    name = "Eperjes"
+	}
+	
+	}	
+	}
+	
+
 	south_slovakia = {
 	fire_only_once = yes
 	icon = economy
@@ -28,7 +59,21 @@ reintegrate_slovakia = {
 	}
 	}
 
+sekelyland_name = 
+	{ fire_only_once = yes
+	 available =
+	{ OR = { tag = HUN HUN = { has_full_control_of_state = 919 } { tag = SEK SEK = { has_full_control_of_state = 919 } } }
+	visible = { OR = { tag = HUN HUN = { has_full_control_of_state = 919 } { tag = SEK SEK = { has_full_control_of_state = 919 } } }
+	 complete_effect = { 
+	 set_province_name = {
+    id = 9670
+    name =  VICTORY_POINTS_9670_hun
+	}
 
+	
+	}	
+	}
+	}
 
 
 
