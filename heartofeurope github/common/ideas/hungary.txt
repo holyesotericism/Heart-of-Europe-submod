@@ -226,7 +226,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1
 				stability_factor = 0.15
-				political_power_factor = 0.15
+				political_power_gain = 0.55
 				social_democrat_drift = 0.05
 				
 			}
@@ -256,7 +256,7 @@ ideas = {
 				stability_factor = -0.02
 				political_power_factor = -0.02
 				production_speed_buildings_factor = -0.03
-				industrial_capacity_factory = -0.6
+				industrial_capacity_factory = -0.06
 				
 			}
 				}
