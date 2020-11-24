@@ -1,0 +1,86 @@
+banat = {
+
+release_bnat = {
+	fire_only_once = yes
+	available = {
+	OR = {
+	tag = ROM
+	}
+	has_full_control_of_state = 82
+
+	}
+visible = { has_full_control_of_state = 82 }
+
+complete_effect = { 
+BAN = {
+add_state_core = 82
+add_state_core = 918
+}
+ }
+	
+	
+	
+	}
+
+release_transylvania = {
+	fire_only_once = yes
+	available = {
+	has_full_control_of_state = 82
+
+	}
+visible = { has_full_control_of_state = 82 has_full_control_of_state = 937 has_full_control_of_state = 84 has_full_control_of_state = 83 has_full_control_of_state = 919 has_full_control_of_state = 76 has_full_control_of_state = 922 }
+
+complete_effect = { 
+TRS = {
+add_state_core = 82
+add_state_core = 937
+add_state_core = 84
+add_state_core = 83
+add_state_core = 919
+add_state_core = 76
+add_state_core = 922
+}
+ }
+	
+	
+	
+	}
+
+greater_romania_debug = {
+	fire_only_once = yes
+	available = {
+	OR = {
+	tag = ROM
+	}
+
+	}
+visible = { tag = ROM }
+
+complete_effect = { 
+set_cosmetic_tag = ROM_GREATER
+ }
+	
+	
+	
+	}
+
+
+dacia_debug = {
+	fire_only_once = yes
+	available = {
+	OR = {
+	tag = ROM
+	}
+
+	}
+visible = { tag = ROM }
+
+complete_effect = { 
+set_cosmetic_tag = DAC
+ }
+	
+	
+	
+	}
+
+}

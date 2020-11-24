@@ -10,7 +10,10 @@ history={
 
 		}
 		victory_points = {
-			6711 5 
+			713 5 
+		}
+		victory_points = {
+			3696 1
 		}
 		add_core_of = ROM
 

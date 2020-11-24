@@ -11,9 +11,15 @@ owner = HUN
 			infrastructure = 5
 			industrial_complex = 3
 }
+		victory_points = {
+			6720 5 
+		}
+		victory_points = {
+			11627 2 
+		}
 add_core_of = HUN
 }
-	manpower=500000
+	manpower=950000
 	buildings_max_level_factor=1.000
 	state_category=state_level_6
 }

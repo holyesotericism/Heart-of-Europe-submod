@@ -12,6 +12,10 @@ owner = ROM
 			infrastructure = 4
 			industrial_complex = 1
 }
+	victory_points = { 11636 5 }
+		victory_points = {
+			9651 3
+		}
 add_core_of = ROM
 }
 	manpower=500000

@@ -1,5 +1,21 @@
 spriteTypes = { 
-
+	
+	SpriteType = {
+	name = "GFX_gypsies"
+	texturefile = "gfx/interface/goals/gypsies.dds"
+	}	
+	SpriteType = {
+	name = "GFX_gypsies_bad"
+	texturefile = "gfx/interface/goals/gypsies_bad.dds"
+	}
+	SpriteType = {
+	name = "GFX_hun_nationalist"
+	texturefile = "gfx/interface/goals/national_hun.dds"
+	}
+	SpriteType = {
+	name = "GFX_rom_nationalist"
+	texturefile = "gfx/interface/goals/national_rom.dds"
+	}
 	SpriteType = {
 	name = "GFX_pm4life"
 	texturefile = "gfx/interface/goals/pm4life.dds"

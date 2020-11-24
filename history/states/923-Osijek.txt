@@ -10,6 +10,9 @@ history={
 			industrial_complex = 1
 
 		}
+		victory_points = {
+		6647 5
+		}
 }
 	provinces={
 		9608 

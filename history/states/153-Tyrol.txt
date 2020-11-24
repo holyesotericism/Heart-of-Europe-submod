@@ -12,24 +12,23 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		victory_points = {
-			673 5 
+			673 10
 		}
 		victory_points = {
-			6673 1 
+			6673 3 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			industrial_complex = 1
-			air_base = 4
 
 		}
 
 	}
 
 	provinces={
-		671 673 6678 6680 9633 9636 11618 11634 
+		673 6678 9633 9636 11618 11634 13261
 	}
-	manpower=1855340
+	manpower=703149
 	buildings_max_level_factor=1.000
-	state_category=state_level_7
+	state_category=state_level_8
 }

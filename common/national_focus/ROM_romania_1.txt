@@ -1,0 +1,268 @@
+focus_tree = { 
+id = romania_1
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ROM
+} 
+}
+
+            #Focus for The election of 2000
+focus = { 
+id = ROM_2000_election
+icon = GFX_election
+x = 21
+y = 0
+cost = 20
+available_if_capitulated = yes 
+
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+             #Focus for PRM-ND
+focus = { 
+id = ROM_prmnd
+icon = GFX_election
+x = 12
+y = 1
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_2000_election } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+              #Focus for PNL-PNȚCD-PRN
+focus = { 
+id = ROM_pnl_pntcd_prn
+icon = GFX_election
+x = 21
+y = 1
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_2000_election } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+               #Focus for PDSR
+focus = { 
+id = ROM_pdsr
+icon = GFX_election
+x = 29
+y = 1
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_2000_election } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                #Focus for PDSR
+focus = { 
+id = ROM_pdsr
+icon = GFX_election
+x = 29
+y = 1
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_2000_election } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                #Focus for PRN
+focus = { 
+id = ROM_prn_coalition
+icon = GFX_election
+x = 19
+y = 2
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_pnl_pntcd_prn} 
+mutually_exclusive = { focus = ROM_pnl }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                 #Focus for PNL
+focus = { 
+id = ROM_pnl
+icon = GFX_election
+x = 23
+y = 2
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_pnl_pntcd_prn} 
+mutually_exclusive = { focus = ROM_prn_coalition }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                 #Focus for PNL
+focus = { 
+id = ROM_tudor_ionescu
+icon = GFX_election
+x = 8
+y = 2
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_prmnd } 
+mutually_exclusive = { focus = ROM_corneliu_vadim_tudor }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ } 
+ 
+ 
+                  #Focus for PNL
+focus = { 
+id = ROM_corneliu_vadim_tudor
+icon = GFX_election
+x = 16
+y = 2
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_prmnd } 
+mutually_exclusive = { focus = ROM_tudor_ionescu }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                   #Focus for PNL
+focus = { 
+id = ROM_prezrepublic
+icon = GFX_election
+x = 16
+y = 3
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_corneliu_vadim_tudor } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                   #Focus for PNL
+focus = { 
+id = ROM_govresturcturing
+icon = GFX_election
+x = 16
+y = 4
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_prezrepublic } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ } 
+ 
+                   #Focus for PNL
+focus = { 
+id = ROM_monarchyquestion
+icon = GFX_election
+x = 16
+y = 5
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_govresturcturing } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+
+                   #Focus for PNL
+focus = { 
+id = ROM_backtotheroots
+icon = GFX_election
+x = 17
+y = 6
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_monarchyquestion } 
+mutually_exclusive = { focus = ROM_movingonwards }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
+ 
+                    #Focus for PNL
+focus = { 
+id = ROM_movingonwards
+icon = GFX_election
+x = 15
+y = 6
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = ROM_monarchyquestion } 
+mutually_exclusive = { focus = ROM_backtotheroots }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+
+}
+
+ }
