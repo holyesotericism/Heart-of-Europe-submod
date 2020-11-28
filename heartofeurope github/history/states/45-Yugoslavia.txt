@@ -1,0 +1,30 @@
+
+state={
+	id=45
+	name="STATE_45"
+
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = SER
+		add_core_of = VOJ
+		victory_points = {
+			3617 10 
+		}
+		victory_points = {
+			9621 2 
+		}
+
+	}
+
+	provinces={
+		619 3617 3623 9621 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
+}

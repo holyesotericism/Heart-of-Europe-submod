@@ -1,0 +1,23 @@
+state={
+	id=939
+	name="STATE_939"
+	
+history={
+
+		owner = AUS
+		add_core_of = AUS
+
+		buildings = {
+			infrastructure = 7
+		}
+			victory_points = {
+			688 10 
+		}
+	}
+	provinces={
+		668 671 688 3674 3675
+	}
+	manpower=518245
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
+}

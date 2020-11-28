@@ -1,0 +1,7 @@
+VOJ = {
+	color = rgb { 56 56 108 }
+	color_ui = rgb { 39 56 109 }
+}
+SEK = { 
+	color = rgb { 108 56 56 }
+	color_ui = rgb { 108 56 56 }

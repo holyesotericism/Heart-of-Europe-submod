@@ -1,0 +1,3053 @@
+focus_tree = { 
+id = hungary_1
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = HUN 
+} 
+}
+ 
+#Focus for Strengthen Visegrad
+focus = { 
+id = HUN_strengthenvisegrad
+icon = GFX_goal_tripartite_pact
+x = 25
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_drawclosertobrussels focus = HUN_eufriends }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_opinion_modifier= { 
+target = POL 
+modifier = medium_increase 
+}
+add_opinion_modifier= { 
+target = SLO 
+modifier = medium_increase 
+}
+add_opinion_modifier= { 
+target = CZE 
+modifier = medium_increase 
+}
+ } 
+
+ } 
+
+#Focus for Visegrad1
+focus = { 
+id = HUN_eufriends
+icon = GFX_goal_generic_forceful_treaty
+x = 32
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_easternopening } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+completion_reward = { 
+ } 
+
+ }
+
+#Focus for Leave NATO
+focus = { 
+id = HUN_leavenato
+icon = GFX_goal_generic_forceful_treaty
+x = 67
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_neutrality } 
+ai_will_do = { 
+ factor = 1
+ } 
+bypass = { 
+HUN = {is_in_faction= no}
+ } 
+completion_reward = { 
+HUN = {leave_faction= HUN}
+ } 
+
+ }  
+
+#Focus for Neutrality
+focus = { 
+id = HUN_neutrality
+icon = GFX_goal_generic_neutrality_focus
+x = 67
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_peoplesrepublic } 
+mutually_exclusive = { focus = HUN_internationale }  
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+HUN = {add_ideas= neutrality_idea}
+ } 
+
+ } 
+
+#Focus for join Russia
+focus = { 
+id = HUN_internationale
+icon = GFX_hunrussia
+x = 69
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_peoplesrepublic } 
+mutually_exclusive = { focus = HUN_neutrality }  
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_faction = "Internationale"
+
+ }
+
+} 
+
+#Focus for join Russia
+focus = { 
+id = HUN_compoland
+icon = GFX_hunrussia
+x = 69
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_internationale } 
+ 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+POL = { add_timed_idea = {
+    idea = idea_hun_communism
+    days = 360
+} }
+
+CZE = { add_timed_idea = {
+    idea = idea_hun_communism
+    days = 360
+} }
+
+SLO = { add_timed_idea = {
+    idea = idea_hun_communism
+    days = 360
+} }
+
+ROM = { add_timed_idea = {
+    idea = idea_hun_communism
+    days = 360
+} }
+
+BUL = { add_timed_idea = {
+    idea = idea_hun_communism
+    days = 360
+} }
+
+ }
+
+ }
+ 
+#Focus for join Russia
+focus = { 
+id = HUN_easternbloc
+icon = GFX_hunrussia
+x = 69
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_compoland } 
+
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+POL = { country_event = hungary_communist.1 }
+
+ }
+ }
+
+#Focus for Draw closer to Russia
+focus = { 
+id = HUN_drawclosertorussia
+icon = GFX_hunrussia
+x = 34
+y = 11
+cost = 10
+available_if_capitulated = yes   
+prerequisite = { focus = HUN_easternopening }  
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SOV = {add_opinion_modifier= { 
+target = HUN 
+modifier = medium_increase
+}
+}
+ } 
+
+ } 
+ 
+
+#Focus for Internal politics
+focus = { 
+id = HUN_internalpolitics
+icon = GFX_hunpolitics
+x = 36
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+HUN = {add_political_power= 150}
+ } 
+
+ } 
+
+#Focus for Common goals
+focus = { 
+id = HUN_commongoals
+icon = GFX_goal_generic_national_unity
+x = 25
+y = 14
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_strengthenvisegrad } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+HUN = {add_political_power= 50}
+POL = {add_political_power= 50}
+CZE = {add_political_power= 50}
+SLO = {add_political_power= 50}
+ } 
+
+ } 
+
+#Focus for Visergrad propaganda
+focus = { 
+id = HUN_visergradpropaganda
+icon = GFX_goal_generic_radar
+x = 26
+y = 13
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_strengthenvisegrad } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_stability= 0.15
+ } 
+
+ } 
+ 
+
+#Focus for Support FIDESZ
+focus = { 
+id = HUN_supportfidesz
+icon = GFX_fidesz
+x = 25
+y = 5
+cost = 10
+available_if_capitulated = yes 
+available = { always = no }
+prerequisite = { focus = HUN_2002election } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_conservative_influence_by_2 = yes
+add_popularity = {
+ideology = conservative
+popularity = 0.1
+}
+}
+bypass = { HUN = { has_government = reactionary } }
+
+ } 
+ 
+
+#Focus for Invest in Slovak Buisnesses
+focus = { 
+id = HUN_investinslovakbuisnesses
+icon = GFX_goal_generic_production2
+x = 15
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_strenghtenbondswithslovakia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { SLO =
+ { random_owned_controlled_state =
+ { add_extra_state_shared_building_slots = 2
+ add_building_construction = 
+ { type = industrial_complex
+ level = 2
+ instant_build = yes
+ }
+ }
+ }
+ }
+ } 
+
+#Focus for Hungarian-Slovakian Military Coalition
+focus = { 
+id = HUN_hungarianslovakianmilitarycoalition
+icon = GFX_goal_generic_military_deal
+x = 17
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_strenghtenbondswithslovakia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+HUN = {give_guarantee= SLO}
+SLO = {give_guarantee= HUN}
+ } 
+
+ } 
+
+#Focus for Hungarian propaganda in Slovakia
+focus = { 
+id = HUN_hungarianpropagandainslovakia
+icon = GFX_goal_unknown
+x = 19
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_strenghtenbondswithslovakia } 
+ai_will_do = { 
+ factor = 1
+ }
+ } 
+
+#Focus for Support MSZP
+focus = { 
+id = HUN_supportmszp
+icon = GFX_mszp
+x = 16
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_2002election }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+increase_social_democrat_influence_by_1 = yes
+add_popularity = {
+ideology = social_democrat
+popularity = 0.03
+}
+set_politics = {
+ruling_party = social_democrat
+elections_allowed = yes
+}
+}
+available = { always = no }
+bypass = { HUN = { has_government = social_democrat } }
+ } 
+
+#Focus for Coalition in the EU
+focus = { 
+id = HUN_coalitionintheeu
+icon = GFX_goal_unknown
+x = 27
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_polishhungarianfriendship } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Strenghten bonds with Slovakia
+focus = { 
+id = HUN_strenghtenbondswithslovakia
+icon = GFX_goal_unknown
+x = 18
+y = 15
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_commongoals } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fund Slovak Highways
+focus = { 
+id = HUN_fundslovakhighways
+icon = GFX_goal_generic_construct_infrastructure
+x = 21
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_strenghtenbondswithslovakia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { SLO =
+ { random_owned_controlled_state =
+ { add_building_construction = 
+ { type = infrastructure
+ level = 2
+ instant_build = yes
+ }
+ }
+ }
+ }
+ } 
+
+#Focus for Influence Slovakia
+focus = { 
+id = HUN_influenceslovakia
+icon = GFX_goal_generic_territory_or_war
+x = 18
+y = 17
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_fundslovakhighways } 
+prerequisite = { focus = HUN_hungarianpropagandainslovakia } 
+prerequisite = { focus = HUN_hungarianslovakianmilitarycoalition } 
+prerequisite = { focus = HUN_investinslovakbuisnesses } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+HUN = {puppet= SLO}
+ } 
+
+ } 
+
+#Focus for Draw closer to the EU
+focus = { 
+id = HUN_drawclosertobrussels
+icon = GFX_eudiplomacy
+x = 12
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_eu1 }
+ai_will_do = { 
+ factor = 1
+ }
+ completion_reward = { 
+HUN = {add_political_power = 50}
+ }
+ 
+ }
+  
+ 
+ # Focus for Path of the republic
+focus = { 
+id = HUN_pathoftherepublic
+icon = GFX_path_of_the_republic
+x = 21
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_internalpolitics }
+mutually_exclusive = { focus = HUN_pathofequality }
+mutually_exclusive = { focus = HUN_pathoftheempire }  
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+
+
+ } 
+ }
+ 
+  # Focus for Path of equality
+focus = { 
+id = HUN_pathofequality
+icon = GFX_path_of_equality
+x = 68
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_internalpolitics }
+mutually_exclusive = { focus = HUN_pathoftherepublic focus = HUN_pathoftheempire } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_ideas = {idea_hun_communism}
+}
+ } 
+  
+ 
+   # Focus for Thürmer's Regime
+focus = { 
+id = HUN_thurmersregime
+icon = GFX_thurmers_regime
+x = 68
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathofequality } 
+ai_will_do = { 
+ factor = 1
+ } 
+available = { always = no }
+completion_reward = {
+
+}
+bypass = { HUN = {has_government = communist} } 
+ }
+ 
+ 
+ 
+ 
+   # Focus for Bring back the People's republic
+focus = { 
+id = HUN_peoplesrepublic
+icon = GFX_peoplesrepublic
+x = 68
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_thurmersregime } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_1 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.15
+}
+set_politics = {
+ruling_party = communist
+elections_allowed = yes
+}
+set_party_name = { 
+    ideology = communist 
+    long_name = HUN_mszmp_long
+    name = MSZMP
+}
+ }
+ }
+ 
+ 
+ focus = { 
+id = HUN_glorykadar
+icon = GFX_kadar
+x = 66
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathofequality }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+add_popularity = {
+ideology = communist
+popularity = 0.05
+}
+ }
+ }
+ 
+  focus = { 
+id = HUN_demandelection
+icon = GFX_goal_unknown
+x = 70
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathofequality }
+ai_will_do = { 
+ factor = 1
+ }
+available = { communist > 0.2 }
+completion_reward = { 
+add_popularity = {
+ideology = communist
+popularity = 0.05
+}
+ }
+ }
+ 
+
+ 
+ #################
+ ###Monarchy####
+ #################
+ 
+ 
+    # Focus for reignite legitimist sentiment
+focus = { 
+id = HUN_pathoftheempire
+icon = GFX_path_of_the_empire
+x = 47
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_internalpolitics }
+mutually_exclusive = { focus = HUN_pathoftherepublic }
+mutually_exclusive = { focus = HUN_pathofequality }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+ add_ideas = {idea_hun_legitimism}
+ add_popularity = { ideology = monarchist popularity = 0.05 }
+}
+ }
+ 
+  # Focus for A king for our people
+focus = { 
+id = HUN_kingforhungary
+icon = GFX_habsburg
+x = 48
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftheempire }
+mutually_exclusive = { focus = HUN_monarchycompromise }
+available = {AND = {monarchist > 0.2}}
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_monarchist_influence_by_2 = yes
+add_popularity = {
+ideology = monarchist
+popularity = 0.1
+}
+HUN = {
+country_event = { id = hungary.1 days = 1 }
+}
+custom_effect_tooltip = 33_HUN_tt
+}
+ } 
+
+
+
+ # Focus for Vesszen Trianon
+focus = { 
+id = HUN_trianon
+icon = GFX_trianon
+x = 45
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_kingforhungary focus = HUN_monarchycompromise focus = HUN_internationale focus = HUN_neutrality focus = HUN_electnationalist }
+
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_monarchist_influence_by_1 = yes
+add_popularity = {
+ideology = monarchist
+popularity = 0.1
+}
+ROM = { country_event = { id = hungary.5 } }
+add_state_claim = 45
+add_state_claim = 83
+add_state_claim = 84
+add_state_claim = 82
+add_state_claim = 918
+add_state_claim = 73
+add_state_claim = 923
+add_state_claim = 70
+add_state_claim = 71
+add_state_claim = 76
+add_state_claim = 926
+add_state_claim = 922
+add_state_claim = 925
+add_state_claim = 924
+add_state_claim = 109
+add_state_claim = 930
+add_state_claim = 932
+add_state_core = 919
+add_state_core = 931
+
+add_named_threat = { threat = 5 name = HUN_trianon }
+ROM = {add_opinion_modifier= { 
+target = HUN 
+modifier = HUN_territorial_claims } }
+SLO = {add_opinion_modifier= { 
+target = HUN 
+modifier = HUN_territorial_claims } }
+SER = {add_opinion_modifier= { 
+target = HUN 
+modifier = HUN_territorial_claims } }
+UKR = {add_opinion_modifier= { 
+target = HUN 
+modifier = HUN_territorial_claims } }
+custom_effect_tooltip = 22_HUN_tt
+ }
+ } 
+ 
+    # Focus for Restore the Kingdom of Hungary
+focus = { 
+id = HUN_integration
+icon = GFX_goal_unknown
+x = 49
+y = 14
+cost = 30
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_romania }
+prerequisite = { focus = HUN_ruthenia focus = HUN_polandukr }
+prerequisite = { focus = HUN_burgenland }
+prerequisite = { focus = HUN_mura }
+prerequisite = { focus = HUN_croatia }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_monarchist_influence_by_1 = yes
+add_popularity = {
+ideology = monarchist
+popularity = 0.05
+}
+add_state_core = 45
+add_state_core = 83
+add_state_core = 84
+add_state_core = 82
+add_state_core = 918
+add_state_core = 73
+add_state_core = 45
+add_state_core = 70
+add_state_core = 71
+add_state_core = 76
+add_state_core = 924
+add_state_core = 925
+add_state_core = 923
+add_state_core = 926
+add_state_core = 919
+add_state_core = 922
+add_state_core = 932
+add_state_core = 931
+add_state_core = 109
+add_state_core = 930
+ }
+ } 
+    # Focus for Ultimatum for Slovakia
+focus = { 
+id = HUN_slovakultimatum
+icon = GFX_goal_unknown
+x = 49
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_trianon }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+SLO = {
+country_event = { id = hungary.2 days = 1 }
+}
+}
+ }
+ 
+    # Focus for Ultimatum for Yugoslavia
+focus = { 
+id = HUN_serbultimatum
+icon = GFX_goal_unknown
+x = 47
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_trianon }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+SER = {
+country_event = { id = hungary2.2 days = 1 }
+}
+}
+ }
+ 
+    # Focus for Deal
+focus = { 
+id = HUN_yugodeal
+icon = GFX_goal_unknown
+x = 45
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_trianon }
+mutually_exclusive = { focus = HUN_serbultimatum }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+SER = {
+country_event = { id = hungary.12 days = 1 }
+}
+}
+ }
+
+     # Focus for The Yugoslav agreement
+focus = { 
+id = HUN_vojvodina
+icon = GFX_goal_unknown
+x = 46
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_serbultimatum focus = HUN_yugodeal }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = { puppet = VOJ }
+
+}
+ }
+ 
+     # Focus for The Yugoslav agreement
+focus = { 
+id = HUN_vojvodina2
+icon = GFX_goal_unknown
+x = 46
+y = 12
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_vojvodina }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = { annex_country = {
+    target = VOJ
+    transfer_troops = yes
+	}
+
+}
+ }
+ }
+ 
+
+ 
+      # Focus for Demand Transilvania
+focus = { 
+id = HUN_romania
+icon = GFX_goal_unknown
+x = 48
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_trianon }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+ROM = {
+country_event = { id = hungary.6 days = 1 }
+}
+}
+ } 
+ 
+      # Focus for Return to The Adriatic
+focus = { 
+id = HUN_croatia
+icon = GFX_goal_unknown
+x = 45
+y = 13
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_yugodeal focus = HUN_serbultimatum }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = { create_wargoal = {
+    type = annex_everything
+    target = CRO
+}
+ }
+ }
+ }
+ 
+      # Focus for Pekmurje
+focus = { 
+id = HUN_mura
+icon = GFX_goal_unknown
+x = 47
+y = 13
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_yugodeal focus = HUN_serbultimatum }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = {
+
+    create_wargoal = {
+
+    type = take_state_focus
+
+    target = SLV
+
+    generator = { 925 }
+}	
+}
+
+    
+}
+ }
+ 
+      # Focus for Get the Carpathians
+focus = { 
+id = HUN_ruthenia
+icon = GFX_goal_unknown
+x = 49
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_slovakultimatum }
+mutually_exclusive = { focus = HUN_polandukr }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 154
+        num_provinces = 4
+        on_win = hungary_border_conflict.1
+        on_lose = hungary_border_conflict.2
+        on_cancel = hungary_border_conflict.3
+    }
+				
+    defender = {
+        state = 73
+        num_provinces = 4
+        on_win = hungary_border_conflict.2
+        on_lose = hungary_border_conflict.1
+        on_cancel = hungary_border_conflict.3
+    }
+}
+custom_effect_tooltip = 11_HUN_tt
+}
+ }
+ 
+      # Focus for See to the West
+focus = { 
+id = HUN_burgenland
+icon = GFX_goal_unknown
+x = 43
+y = 13
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_trianon }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+AUS = {
+country_event = { id = hungary.9 days = 1 }
+}
+}
+ }
+ 
+       # Focus for Invade Austria
+focus = { 
+id = HUN_austria
+icon = GFX_goal_unknown
+x = 55
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_kingforhungary }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+AUS = {
+country_event = { id = hungary.7 days = 1 }
+}
+}
+ }
+ 
+       # Focus for Restore Austria-Hungary
+focus = { 
+id = HUN_imperialrestoration
+icon = GFX_imperialrestoration
+x = 55
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_austria }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = { set_cosmetic_tag = HUN_EMPIRE
+add_state_core = 924
+add_state_core = 4
+add_state_core = 152
+add_state_core = 153 }
+}
+ }
+
+ 
+       # Focus for Reintegrate the Czechs
+focus = { 
+id = HUN_czechia
+icon = GFX_goal_unknown
+x = 57
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_imperialrestoration }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+CZE = {
+country_event = { id = hungary.11 days = 1 }
+}
+}
+ }
+ 
+        # Focus for Reintegrate the Czechs
+focus = { 
+id = HUN_czechiaintegration
+icon = GFX_goal_unknown
+x = 57
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_czechia }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = {
+add_state_core = 9
+add_state_core = 75
+add_state_core = 69
+add_state_core = 74
+add_state_core = 72
+add_state_core = 933
+}
+}
+ }
+ 
+        # Focus for Befriend Poland
+focus = { 
+id = HUN_befriendpoland
+icon = GFX_polandfriend
+x = 53
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_imperialrestoration }
+mutually_exclusive = { focus = HUN_galicia }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+POL = {
+add_ideas = { idea_hun_legitimism }
+}
+}
+ }
+ 
+         # Split Ukraine
+focus = { 
+id = HUN_polandukr
+icon = GFX_goal_unknown
+x = 53
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_befriendpoland }
+mutually_exclusive = { focus = HUN_ruthenia }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+POL = {
+country_event = { id = hungary.10 days = 1 }
+}
+}
+ }
+ 
+ 
+        # Focus for Retake Galicia
+focus = { 
+id = HUN_galicia
+icon = GFX_goal_unknown
+x = 55
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_imperialrestoration }
+mutually_exclusive = { focus = HUN_befriendpoland }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = {
+
+    create_wargoal = {
+
+    type = take_state_focus
+
+    target = POL
+
+    generator = { 88 }
+}
+    create_wargoal = {
+
+    type = take_state_focus
+
+    target = UKR
+
+    generator = { 89 91 80 }
+}		
+}
+}
+ }
+ 
+        # Focus for Retake Galicia
+focus = { 
+id = HUN_galiciaint
+icon = GFX_goal_unknown
+x = 55
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_galicia }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+HUN = {
+add_state_core = 88
+add_state_core = 89
+add_state_core = 91
+add_state_core = 80
+}
+}
+ }
+ 
+        # Focus for Glorify the Austro-Hungarian Monarchy
+focus = { 
+id = HUN_glorymonarchy
+icon = GFX_glorymonarchy
+x = 51
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftheempire }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+add_popularity = {
+ideology = monarchist
+popularity = 0.05
+}
+ }
+ }
+ 
+        # Focus for Empower the landowners
+focus = { 
+id = HUN_landowners
+icon = GFX_hun_landowners
+x = 44
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftheempire }
+ai_will_do = { 
+ factor = 1
+ }
+completion_reward = { 
+add_popularity = {
+ideology = monarchist
+popularity = 0.02
+}
+add_popularity = {
+ideology = reactionary
+popularity = 0.05
+}
+add_stability = 0.07
+add_ideas = idea_hun_landowners
+ }
+
+ }
+ 
+  # Focus for Monarchy compromise
+focus = { 
+id = HUN_monarchycompromise
+icon = GFX_path_of_the_republic
+x = 46
+y = 3
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = HUN_kingforhungary }
+prerequisite = { focus = HUN_landowners }
+available = {reactionary > 0.2}
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_popularity = {
+ideology = monarchist
+popularity = 0.05
+}
+add_popularity = {
+ideology = reactionary
+popularity = 0.1
+}
+add_ideas = { idea_hun_otto_von_habsburg }
+set_politics = { 
+ruling_party = reactionary
+elections_allowed = yes 
+}
+
+}
+ }
+ 
+
+##############################
+####Industrial Development####
+##############################
+
+  # Focus for Privatisation
+focus = { 
+id = HUN_privatisation
+icon = GFX_hunprivatisation
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_landowners }
+available = {reactionary > 0.1}
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_popularity = {
+ideology = monarchist
+popularity = 0.05
+}
+add_popularity = {
+ideology = reactionary
+popularity = 0.1
+}
+add_offsite_building = { type = industrial_complex level = 2 }
+add_ideas = { idea_hun_privatisation }
+}
+ }
+ 
+  # Focus for Industrial Biuldup
+focus = { 
+id = HUN_factories1
+icon = GFX_factories
+x = 44
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_privatisation }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+HUN = {
+random_owned_state = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+	}
+}
+}
+}
+ } 
+ 
+  # Focus for Industrial Biuldup 2
+focus = { 
+id = HUN_factories2
+icon = GFX_factories
+x = 44
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_factories1 }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+HUN = {
+random_owned_state = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+	}
+}
+}
+}
+ }
+ 
+#####################
+###Mlitary buildup###
+#####################
+ 
+  # Focus for military Biuldup 1
+focus = { 
+id = HUN_militaryfac1
+icon = GFX_factories
+x = 80
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_honvedseg }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+HUN = {
+random_owned_state = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+    type = arms_factory
+    level = 2
+    instant_build = yes
+	}
+}
+}
+}
+ }
+
+  # Focus for military Biuldup 2
+focus = { 
+id = HUN_militaryfac2
+icon = GFX_factories
+x = 80
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_militaryfac1 }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+HUN = {
+random_owned_state = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+    type = arms_factory
+    level = 2
+    instant_build = yes
+	}
+}
+}
+}
+ }
+ 
+  # Focus for Honvédség
+focus = { 
+id = HUN_honvedseg
+icon = GFX_honvedseg
+x = 82
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+army_experience = 40
+
+}
+ }
+ 
+  # Focus for Honvédség
+focus = { 
+id = HUN_honvedseg2
+icon = GFX_honvedseg
+x = 82
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_honvedseg }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+army_experience = 15
+
+}
+ }
+
+  # Focus for Honvédség
+focus = { 
+id = HUN_honvedseg3
+icon = GFX_honvedseg
+x = 82
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_honvedseg2 }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+army_experience = 5
+add_research_slot = 1
+
+}
+ }
+ 
+            # Focus for Develop war plans
+focus = { 
+id = HUN_warplans
+icon = GFX_goal_unknown
+x = 84
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_honvedseg }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+army_experience = 30
+}
+ }
+
+#
+#
+# 
+ 
+ #Focus for Polish-Hungarian friendship
+focus = { 
+id = HUN_polishhungarianfriendship
+icon = GFX_goal_unknown
+x = 25
+y = 15
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_commongoals } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ 
+ #Focus for Encourage Polish-Hungarian Trade
+focus = { 
+id = HUN_polishhungariantrade
+icon = GFX_goal_unknown
+x = 23
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_polishhungarianfriendship } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+  #Focus for Polish-Hungarian Military Aggreement
+focus = { 
+id = HUN_polishhungarianmilitary
+icon = GFX_goal_unknown
+x = 25
+y = 16
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_polishhungarianfriendship } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+  #Focus for Closer Bonds with Poland
+focus = { 
+id = HUN_polishhungarianunion
+icon = GFX_polandfriend
+x = 25
+y = 17
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_polishhungarianmilitary }
+prerequisite = { focus = HUN_polishhungariantrade }
+prerequisite = { focus = HUN_coalitionintheeu }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+   #Focus for Family Programs
+focus = { 
+id = HUN_familyaid
+icon = GFX_goal_unknown
+x = 27
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_conservativeconst }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+
+ 
+ 
+ 
+      #Focus for Patriotism
+focus = { 
+id = HUN_patriotism
+icon = GFX_goal_unknown
+x = 23
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_conservativeconst }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+       #Focus for Border Fence
+focus = { 
+id = HUN_borderfence
+icon = GFX_goal_unknown
+x = 25
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_antiimmigrant }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+        #Focus for Anti-Immigrant policy
+focus = { 
+id = HUN_antiimmigrant
+icon = GFX_goal_unknown
+x = 25
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_patriotism }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+        #Focus for Stop the population decline
+focus = { 
+id = HUN_population1
+icon = GFX_goal_unknown
+x = 19
+y = 3
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_orbangov1 }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+         #Focus for Expand the Army
+focus = { 
+id = HUN_army1
+icon = GFX_goal_unknown
+x = 21
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_patriotism }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+          #Focus for Recruitment programs
+focus = { 
+id = HUN_recruitment
+icon = GFX_goal_unknown
+x = 21
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_army1 }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+          #Focus for Help minorities
+focus = { 
+id = HUN_hunminorities
+icon = GFX_goal_unknown
+x = 23
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_patriotism }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+          #Focus for Help minorities
+focus = { 
+id = HUN_szekely
+icon = GFX_goal_unknown
+x = 23
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_hunminorities }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_state_core = 919
+add_state_core = 73
+add_state_core = 45
+}
+ }
+ 
+           #Focus for A New Constitution
+focus = { 
+id = HUN_conservativeconst
+icon = GFX_goal_unknown
+x = 30
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_supportfidesz focus = HUN_fideszmiep }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+set_cosmetic_tag = HUN_NEWCON
+add_political_power = 120
+add_stability = 0.07
+decrease_social_democrat_influence_by_2 = yes
+decrease_progressive_influence_by_2 = yes
+increase_conservative_influence_by_2 = yes
+increase_reactionary_influence_by_2 = yes
+ }
+ 
+ }
+ 
+           #Focus for God
+focus = { 
+id = HUN_god
+icon = GFX_goal_unknown
+x = 19
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_conservativeconst }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+            #Focus for Work
+focus = { 
+id = HUN_work
+icon = GFX_goal_unknown
+x = 29
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_conservativeconst }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+             #Focus for Expand School system
+focus = { 
+id = HUN_schools
+icon = GFX_hun_education
+x = 28
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_familyaid focus = HUN_work }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+             #Focus for free textbooks
+focus = { 
+id = HUN_schools2
+icon = GFX_hun_education
+x = 28
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_schools }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+              #Focus for patriotic education
+focus = { 
+id = HUN_schools3
+icon = GFX_hun_education
+x = 28
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_schools2 }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+              #Focus for Vitalise motherhood
+focus = { 
+id = HUN_family1
+icon = GFX_hun_education
+x = 27
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_familyaid }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+               #Focus for Vitalise motherhood
+focus = { 
+id = HUN_family2
+icon = GFX_hun_education
+x = 26
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_family1 }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+              #Focus for Start the nationalization of key industries
+focus = { 
+id = HUN_work1
+icon = GFX_hun_education
+x = 29
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_work }
+prerequisite = { focus = HUN_solidifypower }
+ai_will_do = { 
+ factor = 1
+ }
+
+ } 
+ 
+            #Focus for Work
+focus = { 
+id = HUN_solidifypower
+icon = GFX_goal_unknown
+x = 31
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_conservativeconst }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+increase_reactionary_influence_by_2 = yes
+add_stability = 0.05
+ }
+ }
+
+             #Focus for Work
+focus = { 
+id = HUN_scatteropposition
+icon = GFX_goal_unknown
+x = 31
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_solidifypower }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+increase_reactionary_influence_by_1 = yes
+increase_social_liberal_influence_by_2 = yes
+decrease_social_democrat_influence_by_2 = yes
+
+ }
+ }
+ 
+              #Focus for Work
+focus = { 
+id = HUN_influencemedia
+icon = GFX_goal_unknown
+x = 31
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_scatteropposition }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_stability = 0.10 }
+ }
+ 
+              #Focus for Work
+focus = { 
+id = HUN_pm4life
+icon = GFX_pm4life
+x = 30
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_termlimit }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+set_politics {
+ruling_party = reactionary
+elections_allowed = no
+}
+ }
+	}
+	
+focus = { 
+id = HUN_termlimit
+icon = GFX_pm4life
+x = 30
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_influencemedia }
+prerequisite = { focus = HUN_work1 }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_political_power = 105
+add_popularity = {
+ideology = reactionary
+popularity = -0.07
+}
+ }
+	}
+ 
+ 
+           #Focus for The First Orbán Government
+focus = { 
+id = HUN_orbangov1
+icon = GFX_orbangov
+x = 21
+y = 2
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftherepublic}
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+            #Focus for The election of 2002
+focus = { 
+id = HUN_2002election
+icon = GFX_election
+x = 21
+y = 4
+cost = 20
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_combatinflation }
+prerequisite = { focus = HUN_population1 }
+prerequisite = { focus = HUN_freeeducation }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { add_political_power = 120 
+create_country_leader = {
+	name = "Péter Medgyessy"
+	picture = "Medgyessy_Peter.dds"
+	ideology = social_democrat_ideology
+	}
+}
+
+ }
+ 
+             #Focus for Free education
+focus = { 
+id = HUN_freeeducation
+icon = GFX_goal_unknown
+x = 21
+y = 3
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_orbangov1 }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+              #Focus for Combat Inflation
+focus = { 
+id = HUN_combatinflation
+icon = GFX_goal_unknown
+x = 23
+y = 3
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_orbangov1 }
+ai_will_do = { 
+ factor = 1
+ } 
+}
+ 
+               #Focus for Befriend Germany
+focus = { 
+id = HUN_befriendgermany
+icon = GFX_goal_unknown
+x = 16
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_drawclosertobrussels }
+mutually_exclusive = { focus = HUN_befriendfrance }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+                #Focus for Befriend France
+focus = { 
+id = HUN_befriendfrance
+icon = GFX_goal_unknown
+x = 14
+y = 12
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_drawclosertobrussels }
+mutually_exclusive = { focus = HUN_befriendgermany }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+                #Focus for The Third Power
+focus = { 
+id = HUN_visegradunion
+icon = GFX_goal_unknown
+x = 25
+y = 18
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_polishhungarianunion focus = HUN_influenceslovakia }
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ 
+####################
+###MSZP and stuff###
+####################
+ 
+ #Focus for Push for Welfare Reforms
+focus = { 
+id = HUN_welfare
+icon = GFX_mszp
+x = 11
+y = 6
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_supportmszp } 
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_popularity = {
+ideology = social_democrat
+popularity = 0.05
+}
+add_political_power = 80
+swap_ideas = {
+    remove_idea = idea_hun_ongoingreforms
+    add_idea = idea_welfare_reform
+}
+}
+ }
+ 
+ #Focus for Befriend the EU
+focus = { 
+id = HUN_eu1
+icon = GFX_eu_generic
+x = 12
+y = 9
+cost = 30
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_100dayprogram2 }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_popularity = {
+ideology = social_democrat
+popularity = 0.05
+}
+add_ideas = idea_eu_member
+}
+ }
+ 
+  #Focus for Befriend the EU
+focus = { 
+id = HUN_welfarestate
+icon = GFX_mszp
+x = 14
+y = 10
+cost = 30
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_eu1 }
+prerequisite = { focus = HUN_educationreform }
+prerequisite = { focus = HUN_healthcarereform }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_popularity = {
+ideology = social_democrat
+popularity = 0.05
+}
+swap_ideas = { remove_idea = idea_welfare_reform
+			add_idea = idea_welfare_state
+				}
+}
+ }
+ 
+ #Focus for Befriend the EU
+focus = { 
+id = HUN_euboon
+icon = GFX_eupay
+x = 10
+y = 10
+cost = 18
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_eu1 }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+swap_ideas = { 
+  remove_idea = idea_hun_national_debt_2 
+  add_idea = idea_hun_national_debt
+}
+}
+ }
+
+ #Focus for Befriend the EU
+focus = { 
+id = HUN_euboongypsy
+icon = GFX_gypsies
+x = 10
+y = 11
+cost = 18
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_euboon }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+swap_ideas = { 
+  remove_idea = idea_gypsies_1
+  add_idea = idea_gypsies_2
+}
+}
+ }
+
+  #Focus for The 100 day program
+focus = { 
+id = HUN_100dayprogram1
+icon = GFX_100days1
+x = 11
+y = 7
+cost = 14
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_welfare }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_popularity = {
+ideology = social_democrat
+popularity = 0.025
+}
+add_ideas = {
+ idea_hun_national_debt
+ }
+add_political_power = 100
+}
+ }
+ 
+   #Focus for The second 100 day program
+focus = { 
+id = HUN_100dayprogram2
+icon = GFX_100days2
+x = 11
+y = 8
+cost = 14
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_100dayprogram1 }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+
+add_popularity = {
+ideology = social_democrat
+popularity = 0.05
+}
+add_political_power = 120
+
+swap_ideas = {
+    remove_idea = idea_hun_national_debt
+    add_idea = idea_hun_national_debt_2
+}
+}
+ }
+ 
+    #Focus for Gyurcsány government
+focus = { 
+id = HUN_gyurcsany
+icon = GFX_gyurcsanysgov
+x = 17
+y = 6
+cost = 10
+available_if_capitulated = yes 
+available = { has_idea = idea_eu_member }
+prerequisite = { focus = HUN_supportmszp }
+mutually_exclusive = { focus = HUN_medgyessy }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+increase_social_democrat_influence_by_1 = yes
+create_country_leader = {
+	name = "Ferenc Gyurcsány"
+	picture = "Ferenc_Gyurcsany.dds"
+	ideology = social_democrat_ideology
+	}
+add_political_power = -80
+add_stability = -0.04
+}
+ }
+ 
+#Focus for Medgyessy
+focus = { 
+id = HUN_medgyessy
+icon = GFX_medgyessy
+x = 14
+y = 6
+cost = 10
+available_if_capitulated = yes 
+available = { has_idea = idea_eu_member }
+prerequisite = { focus = HUN_supportmszp }
+mutually_exclusive = { focus = HUN_gyurcsany }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+decrease_social_democrat_influence_by_1 = yes
+add_political_power = 30
+add_stability = -0.1
+}
+ }
+ 
+#Focus for Medgyessy
+focus = { 
+id = HUN_medgyessyreform
+icon = GFX_reorganise
+x = 14
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_medgyessy }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_political_power = -85
+add_stability = 0.06
+add_popularity = {
+ideology = social_democrat
+popularity = 0.03
+}
+}
+ } 
+ 
+    #Focus for The 100 steps program
+focus = { 
+id = HUN_100steps
+icon = GFX_100steps
+x = 17
+y = 7
+cost = 21
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_gyurcsany }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+increase_social_democrat_influence_by_1 = yes
+add_popularity = {
+ideology = social_democrat
+popularity = 0.03
+}
+add_stability = 0.05
+random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } 
+}
+ }
+ 
+     #Focus for The Gyurcsány Pack
+focus = { 
+id = HUN_gyurcsanypack
+icon = GFX_gyurcsanypack
+x = 17
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_100steps }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+increase_social_democrat_influence_by_1 = yes
+add_popularity = {
+ideology = social_democrat
+}
+add_stability = 0.07
+add_political_power = 105
+}
+ }
+ 
+     #Focus for The Gyurcsány 2
+focus = { 
+id = HUN_gyurcsany2
+icon = GFX_gyurcsanysgov
+x = 18
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_gyurcsanypack }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_political_power = 50
+}
+ }
+ 
+      #Focus for The euro
+focus = { 
+id = HUN_euro
+icon = GFX_generic_euro
+x = 14
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_welfarestate }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_political_power = 50
+add_ideas = { the_euro }
+}
+ }
+ 
+      #Focus for Bleach
+focus = { 
+id = HUN_bleachindustry
+icon = GFX_generic_euro
+x = 18
+y = 10
+cost = 13
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_gyurcsany2 }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_political_power = 50
+random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+}
+ } 
+ 
+       #Focus for Tariffs
+focus = { 
+id = HUN_tariff1
+icon = GFX_generic_euro
+x = 18
+y = 11
+cost = 13
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_bleachindustry }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+add_popularity = {
+ideology = social_democrat
+popularity = -0.02
+}
+}
+ } 
+ 
+      #Focus for Reform the Healthcare
+focus = { 
+id = HUN_healthcarereform
+icon = GFX_hun_healthcare
+x = 14
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_gyurcsanypack focus = HUN_medgyessyreform }
+prerequisite = { focus = HUN_100dayprogram2 }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_popularity = {
+ideology = social_democrat
+popularity = 0.03
+}
+add_stability = 0.025
+}
+ }
+ 
+      #Focus for Education Reform
+focus = { 
+id = HUN_educationreform
+icon = GFX_hun_education
+x = 16
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_gyurcsanypack focus = HUN_medgyessyreform }
+prerequisite = { focus = HUN_100dayprogram2 }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+add_popularity = {
+ideology = social_democrat
+popularity = 0.03
+add_research_slot = 1
+}
+}
+ }
+
+       #Focus for Fight corruption
+focus = { 
+id = HUN_corruption
+icon = GFX_corruption
+x = 3
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+
+}
+}
+
+###################################
+########Eastern Opening policy#####
+###################################
+ 
+        #Focus for Eastern Opening Policy
+focus = { 
+id = HUN_easternopening
+icon = GFX_corruption
+x = 34
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_conservativeconst }
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+
+}
+}
+
+#Focus for Draw closer to China
+focus = { 
+id = HUN_drawclosertochina
+icon = GFX_hunchina
+x = 36
+y = 11
+cost = 10
+available_if_capitulated = yes   
+prerequisite = { focus = HUN_easternopening }  
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+PRC = {add_opinion_modifier= { 
+target = HUN 
+modifier = medium_increase
+}
+}
+ } 
+
+ }
+ 
+ #Focus for Invite German Investors
+focus = { 
+id = HUN_germaninvestors
+icon = GFX_focus_generic_strike_at_democracy2
+x = 16
+y = 13
+cost = 10
+available_if_capitulated = yes   
+prerequisite = { focus = HUN_befriendgermany }  
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+GER = {add_opinion_modifier= { 
+target = HUN 
+modifier = medium_increase
+}
+HUN = {
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+type = industrial_complex
+level = 2
+instant_build = yes
+}
+
+
+}
+}
+ } 
+
+ }
+ }
+ 
+ 
+
+ 
+ 
+
+ 
+    # Focus for Armanent effort
+focus = { 
+id = HUN_armseffort
+icon = GFX_guns
+x = 75
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_peoplesrepublic } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+     # Focus for Forradalmi Gárda
+focus = { 
+id = HUN_forradalmigarda
+icon = GFX_revguard
+x = 73
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_armseffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+      # Focus for Arms factories
+focus = { 
+id = HUN_production1
+icon = GFX_hunarmy1
+x = 77
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_armseffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+       # Focus for Five year plan
+focus = { 
+id = HUN_fiveyearplan
+icon = GFX_five
+x = 75
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_armseffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+        # Focus for Reorganize the army
+focus = { 
+id = HUN_reorganizethearmy
+icon = GFX_soldier
+x = 73
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_forradalmigarda } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+         # Focus for Reopen Stálinváros
+focus = { 
+id = HUN_stalinvaros
+icon = GFX_soldier
+x = 75
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_fiveyearplan } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+       # Focus for Arms factories2
+focus = { 
+id = HUN_production2
+icon = GFX_armsfactory
+x = 77
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_production1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 0.2
+}
+}
+ }
+ 
+       # Focus for Inner reforms
+focus = { 
+id = HUN_comreforms
+icon = GFX_communism
+x = 63
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_peoplesrepublic } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+remove_ideas = idea_hun_ongoingreforms
+add_timed_idea = { idea = idea_hun_communism_reform days = 360 }
+}
+
+ } 
+ 
+        # Focus for One party
+focus = { 
+id = HUN_oneparty
+icon = GFX_communism
+x = 62
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_comreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_popularity = {
+ideology = communist
+popularity = 1
+}
+add_stability = -0.3
+set_politics = {
+ruling_party = communist
+elections_allowed = no
+}
+}
+ }
+ 
+         # Focus for Secret police
+focus = { 
+id = HUN_secretpolice
+icon = GFX_communism
+x = 64
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_oneparty } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+increase_communist_influence_by_3 = yes
+add_stability = 0.15
+
+}
+ }
+ 
+         # Focus for State Media
+focus = { 
+id = HUN_statemedia
+icon = GFX_communism
+x = 64
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_comreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.20
+}
+ } 
+ 
+          # Focus for collectivisation
+focus = { 
+id = HUN_collectivisation
+icon = GFX_comindustry
+x = 62
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_oneparty } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+}
+}
+}
+ }
+ 
+           # Focus for collectivisation2
+focus = { 
+id = HUN_collectivisation2
+icon = GFX_comindustry
+x = 62
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_collectivisation } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+}
+}
+}
+ }
+ 
+            # Focus for collectivisation3
+focus = { 
+id = HUN_collectivisation3
+icon = GFX_comindustry
+x = 62
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_collectivisation2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 4
+add_building_construction = {
+    type = industrial_complex
+    level = 4
+    instant_build = yes
+}
+}
+}
+ }
+ 
+            # Empire reunited
+focus = { 
+id = HUN_reunitedempire
+icon = GFX_glorymonarchy
+x = 55
+y = 15
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_polandukr focus = HUN_galiciaint } 
+prerequisite = { focus = HUN_czechiaintegration }
+prerequisite = { focus = HUN_integration }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+
+            # Empire reunited
+focus = { 
+id = HUN_federation
+icon = GFX_glorymonarchy
+x = 54
+y = 16
+cost = 10
+available_if_capitulated = yes
+mutually_exclusive = { focus = HUN_impauthority } 
+prerequisite = { focus = HUN_reunitedempire }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+ 
+             # Empire reunited
+focus = { 
+id = HUN_impauthority
+icon = GFX_glorymonarchy
+x = 56
+y = 16
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = HUN_federation }
+prerequisite = { focus = HUN_reunitedempire }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+
+###########################
+######Campaigns############
+###########################
+
+             # Empire reunited
+focus = { 
+id = HUN_camfidesz
+icon = GFX_glorymonarchy
+x = 16
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftherepublic }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+
+             # Empire reunited
+focus = { 
+id = HUN_cammszp
+icon = GFX_glorymonarchy
+x = 26
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftherepublic }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+ 
+              # Empire reunited
+focus = { 
+id = HUN_cammiep
+icon = GFX_glorymonarchy
+x = 37
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_pathoftherepublic }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+ 
+############################
+######   NATIONALISM  ######
+############################
+ 
+               # Empire reunited
+focus = { 
+id = HUN_miep1
+icon = GFX_glorymonarchy
+x = 37
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_cammiep }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+ 
+                # Empire reunited
+focus = { 
+id = HUN_fideszmiep
+icon = GFX_glorymonarchy
+x = 36
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_miep1 }
+mutually_exclusive = { focus = HUN_jobbik }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+country_event = hungary.24
+}
+ }
+ 
+                 # Empire reunited
+focus = { 
+id = HUN_jobbik
+icon = GFX_glorymonarchy
+x = 38
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_miep1 }
+mutually_exclusive = { focus = HUN_fideszmiep }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+set_party_name = {
+ideology = fascist
+name = "Jobbik"
+long_name = "Jobbik"
+}
+add_popularity = {
+ideology = fascist
+popularity = 0.08
+
+}
+}
+	}
+
+ 
+ 
+                  # Empire reunited
+focus = { 
+id = HUN_electnationalist
+icon = GFX_hun_nationalist
+x = 37
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_jobbik focus = HUN_fideszmiep }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.15
+add_political_power = 120
+}
+ }
+ 
+                  # National Unity
+focus = { 
+id = HUN_nationalunity
+icon = GFX_hun_nationalist
+x = 35
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_electnationalist }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = 0.10
+decrease_progressive_influence_by_2 = yes
+}
+ }
+ 
+                  # National Unity
+focus = { 
+id = HUN_gypsies1
+icon = GFX_gypsies_bad
+x = 35
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = HUN_nationalunity }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+add_stability = -0.08
+add_political_power = -100
+add_threat = 3
+remove_ideas = idea_gypsies_1
+}
+ } 
+ 
+#End of focuses 
+ }

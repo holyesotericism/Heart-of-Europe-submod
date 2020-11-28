@@ -1,0 +1,36 @@
+
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		tungsten=68.000
+		oil=2.000
+		steel=6.000
+	}
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		
+		victory_points = {
+			9665 12
+		}
+		
+		victory_points = {
+			3684 1 
+		}
+
+	}
+
+	provinces={
+		732 3684 3703 6708 9665 
+	}
+	manpower=1401242
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
+}

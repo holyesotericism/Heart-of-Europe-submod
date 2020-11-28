@@ -1,0 +1,1040 @@
+﻿
+add_namespace = hungary
+
+country_event = {
+	id = hungary.1
+        title = hungary.1.t
+        desc = hungary.1.d
+
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = { factor = 100 }
+	name = hungary.1.a
+	create_country_leader = {
+	name = "Otto von Habsburg"
+	picture = "ottothefirst.dds"
+	ideology = absolute_monarchist
+	}
+	set_politics = {
+	ruling_party = monarchist
+	elections_allowed = yes
+	}
+	set_party_name = { 
+    ideology = monarchist 
+    long_name = HUN_habsburg_long
+    name = Habsburgs
+	}
+	}
+	}
+	
+	country_event = {
+	id = hungary.2
+        title = hungary.2.t
+        desc = hungary.2.d
+
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.2.a
+	HUN = {
+	annex_country = {
+    target = SLO
+    transfer_troops = yes
+	}
+	country_event = { id = hungary.3 days = 1 }
+	}
+	}
+	option = {
+	ai_chance = { factor = 20 }
+	name = hungary.2.b
+	HUN = {
+	set_state_owner = 664 
+	set_state_controller = 664
+	}
+	}
+	option = {
+	ai_chance = { factor = 30 }
+	name = hungary.2.c
+	HUN = {
+	country_event = { id = hungary.4 days = 1 }
+	}
+	}
+	}
+	
+			country_event = {
+	id = hungary.3
+		title = hungary.3.t
+		desc = hungary.3.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.3.a
+	HUN = { add_stability = 0.1 }
+	}
+	}
+	
+			country_event = {
+	id = hungary.4
+		title = hungary.4.t
+		desc = hungary.4.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.4.a
+	HUN = { add_stability = 0.1 }
+	}
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.4.b
+	HUN = { create_wargoal = {
+    type = annex_everything
+    target = SLO
+	}
+	}
+	}
+	}
+			country_event = {
+	id = hungary.5
+		title = hungary.5.t
+		desc = hungary.5.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 9 }
+	name = hungary.5.a
+	HUN = { add_stability = 0.05 }
+	}
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.5.b
+	ROM = { create_wargoal = {
+    type = annex_everything
+    target = HUN
+	}
+	}
+	}
+	}
+	
+				country_event = {
+	id = hungary.6
+		title = hungary.6.t
+		desc = hungary.6.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 30 }
+	name = hungary.6.a
+	HUN = { 
+	transfer_state = 919 
+	transfer_state = 84
+	transfer_state = 76
+	transfer_state = 83
+	transfer_state = 922 
+	transfer_state = 82
+	transfer_state = 937
+	add_stability = 0.05 }
+	
+	}
+	option = {
+	ai_chance = { factor = 70 }
+	name = hungary.5.b
+	ROM = { declare_war_on = {
+    target = HUN
+    type = annex_everything
+}
+}
+	}
+	}
+	
+			country_event = {
+	id = hungary.7
+		title = hungary.7.t
+		desc = hungary.7.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.7.a
+	HUN = { country_event = hungary.8 }
+	}
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.7.b
+	HUN = { annex_country = {
+    target = AUS
+    transfer_troops = yes
+	}
+	}
+	}
+		}
+	
+			country_event = {
+	id = hungary.8
+		title = hungary.8.t
+		desc = hungary.8.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 80 }
+	name = hungary.8.a
+	HUN = { add_stability = 0.05 }
+	}
+	option = {
+	ai_chance = { factor = 20 }
+	name = hungary.8.b
+	HUN = { create_wargoal = {
+    type = annex_everything
+    target = AUS
+	}
+	}
+	}
+	}
+	
+				country_event = {
+	id = hungary.9
+		title = hungary.9.t
+		desc = hungary.9.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 80 }
+	name = hungary.9.a
+	HUN = { transfer_state = 924 }
+	}
+	option = {
+	ai_chance = { factor = 20 }
+	name = hungary.9.b
+	HUN = { create_wargoal = {
+    type = take_state_focus
+    target = AUS
+	generator = { 924 }
+	}
+	}
+	}
+	}
+
+				country_event = {
+	id = hungary.10
+		title = hungary.10.t
+		desc = hungary.10.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 10 }
+	name = hungary.10.a
+	}
+	option = {
+	ai_chance = { factor = 90 }
+	name = hungary.10.b
+	HUN = { declare_war_on = {
+    target = UKR
+    type = take_state
+	generator = { 73 }
+}
+}
+	POL = { declare_war_on = {
+    target = UKR
+    type = take_state
+	generator = { 89 91 80 }
+}
+}
+	}
+	}
+
+	country_event = {
+	id = hungary.11
+        title = hungary.11.t
+        desc = hungary.11.d
+
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.11.a
+	HUN = {
+	annex_country = {
+    target = CZE
+    transfer_troops = yes
+	}
+	}
+	}
+	 }
+	
+	country_event = {
+	id = hungary.12
+        title = hungary.12.t
+        desc = hungary.12.d
+
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = { factor = 50 }
+	name = hungary.12.a
+	HUN = {
+	annex_country = {
+    target = 
+    transfer_troops = yes
+	}
+	}
+	}
+		option = {
+	ai_chance = { factor = 90 }
+	name = hungary.12.b
+	SER = { 
+	release = VOJ
+	declare_war_on = {
+    target = BOS
+    type = annex_everything
+}
+}
+	HUN = { add_to_war = { 
+    targeted_alliance = SER
+    enemy = BOS 
+    hostility_reason = asked_to_join
+}
+}
+	}
+	}
+
+	country_event = {
+	id = hungary.13
+        title = hungary.13.t
+        desc = hungary.13.d
+
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = { factor = 30 }
+	name = hungary.13.a
+	set_politics = {
+	ruling_party = conservative
+	elections_allowed = yes
+	} 
+	}
+		option = {
+	ai_chance = { factor = 40 }
+	name = hungary.13.b
+	set_politics = {
+	ruling_party = social_democrat
+	elections_allowed = yes
+	}
+	}
+		option = {
+	ai_chance = { factor = 10 }
+	name = hungary.13.c
+	set_politics = {
+	ruling_party = reactionary
+	elections_allowed = yes
+	}
+	}
+		option = {
+	ai_chance = { factor = 10 }
+	name = hungary.13.d
+	set_politics = {
+	ruling_party = nationalist
+	elections_allowed = yes
+	}
+	}
+		option = {
+	ai_chance = { factor = 10 }
+	name = hungary.13.e
+	set_politics = {
+	ruling_party = communist
+	elections_allowed = yes
+	}
+	}	
+	}
+
+country_event = {
+	id = hungary.14
+        title = hungary.14.t
+        desc = hungary.14.d
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { tag = HUN AND = { communist > 0.30 social_democrat < 0.30 conservative < 0.30 } }
+	option = {
+	ai_chance = { factor = 100 }
+	name = Okay
+	set_politics = {
+	ruling_party = communist
+	elections_allowed = yes
+	}
+	
+	
+	} 
+	}
+	
+country_event = {
+
+		id = hungary.15
+        title = hungary.15.t
+        desc = hungary.15.d
+
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Péter Medgyessy"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 2
+	has_stability < 0.35
+	date > 2002.06.25
+	has_political_power < 0
+	}
+	
+	}
+}
+	
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.15.a
+	add_country_leader_trait = scandalous_leader 
+	add_popularity = { ideology = social_democrat popularity = -0.085 }
+	decrease_social_democrat_influence_by_2 = yes
+	}
+	
+		}
+		
+		
+country_event = {
+
+		id = hungary.16
+        title = hungary.16.t
+        desc = hungary.16.d
+
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Ferenc Gyurcsány"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2006.06.05
+	}
+	
+	}
+}
+	
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.16.a
+	add_country_leader_trait = scandalous_leader
+	add_popularity = {
+    ideology = social_democrat
+    popularity = -0.1
+}
+	decrease_social_democrat_influence_by_3 = yes
+	increase_conservative_influence_by_2 = yes
+	}
+	
+		}
+		
+		
+
+country_event = {
+
+		id = hungary.17
+        title = hungary.17.t
+        desc = hungary.17.d
+
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Péter Medgyessy"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2004.01.01
+	has_idea = idea_eu_member
+	}
+	
+	}
+}
+	
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.17.a
+	remove_country_leader_trait = scandalous_leader
+	add_popularity = {
+    ideology = social_democrat
+    popularity = 0.04
+}
+	}
+	
+		}
+		
+country_event = {
+
+		id = hungary.18
+        title = hungary.18.t
+        desc = hungary.18.d
+
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger =  {
+	tag = HUN 
+	has_completed_focus = HUN_pathoftherepublic }
+
+	
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.18.a
+	increase_social_democrat_influence_by_2 = yes
+}
+	}
+	
+	
+country_event = {
+
+		id = hungary.19
+        title = hungary.19.t
+        desc = hungary.19.d
+
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Ferenc Gyurcsány"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2006.08.01
+	}
+	
+	}
+}
+	
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.19.a
+	add_popularity = {
+    ideology = social_democrat
+    popularity = -0.05
+}
+	decrease_social_democrat_influence_by_2 = yes
+	increase_reactionary_influence_by_2 = yes
+	add_stability = -0.075
+	}
+	
+		}
+		
+		
+
+country_event = {
+
+		id = hungary.20
+        title = hungary.20.t
+        desc = hungary.20.d
+		picture = GFX_2006_tank
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Ferenc Gyurcsány"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2006.10.23
+	}
+	
+	}
+	}
+		option = {
+	ai_chance = { factor = 1 }
+	name = hungary.20.a
+	add_popularity = {
+    ideology = social_democrat
+    popularity = -0.07
+}
+	add_popularity = {
+    ideology = reactionary
+    popularity = 0.05
+}
+	add_popularity = {
+    ideology = nationalist
+    popularity = 0.02
+}
+	decrease_social_democrat_influence_by_4 = yes
+	increase_reactionary_influence_by_2 = yes
+	increase_nationalist_influence_by_2 = yes
+	add_stability = -0.12
+	}
+	
+		}
+
+country_event = {
+
+		id = hungary.21
+        title = hungary.21.t
+        desc = hungary.21.d
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Ferenc Gyurcsány"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2005.05.03
+	}
+	
+	}
+	}
+	option = {
+	ai_chance = { factor = 1 }
+	name = hungary.21.a
+	add_popularity = {
+    ideology = reactionary
+    popularity = 0.15
+}
+	add_popularity = {
+    ideology = conservative
+    popularity = -0.15
+}
+	create_country_leader = {
+	name = "Viktor Orbán"
+	picture = "Viktor_Orban_2010.dds"
+	ideology = counter_progressive_democrat
+	}
+	create_country_leader = {
+	name = "Zsolt Semjén"
+	picture = "semjen_zsolt.dds"
+	ideology = christian_democrat
+	}
+	set_party_name = { 
+    ideology = reactionary
+    long_name = Fidesz
+    name = Fidesz
+	}
+		set_party_name = { 
+    ideology = conservative
+    long_name = HUN_kdnp_long
+    name = KDNP
+	}
+}
+	
+
+}
+
+country_event = {
+
+		id = hungary.22
+        title = hungary.22.t
+        desc = hungary.22.d
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Ferenc Gyurcsány"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2009.3.21
+	}
+	
+	}
+	}
+		option = {
+	ai_chance = { factor = 1 }
+	name = hungary.22.a
+		create_country_leader = {
+	name = "Gordon Bajnai"
+	picture = "bajnai_gordon.dds"
+	ideology = social_democrat_ideology
+	}
+	}
+
+	}
+	
+		
+country_event = {
+
+		id = hungary.23
+        title = hungary.23.t
+        desc = hungary.23.d
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { AND {
+	tag = HUN 
+	NOT = {
+	ruling_party = social_democrat
+	has_country_leader = {
+    name = "Gordon Bajnai"
+    ruling_only = yes } }
+	OR {
+	count_triggers = {
+    amount = 1
+	date > 2010.5.23
+	}
+	}
+	}
+	}
+		option = {
+	ai_chance = { factor = 1 }
+	name = hungary.23.a
+		create_country_leader = {
+	name = "Attila Mesterházy"
+	picture = "attila_mesterhazy.dds"
+	ideology = social_democrat_ideology
+	}
+	create_country_leader = {
+	name = "Ferenc Gyurcsány"
+	picture = "Ferenc_Gyurcsany.dds"
+	ideology = liberalist
+	}
+	set_party_name = { 
+    ideology = social_liberal
+    long_name = dk_long
+    name = DK
+	}
+	}
+	}
+			
+
+
+add_namespace = hungary_election_2002
+
+country_event = {
+	id = hungary_election_2002.1
+        title = hungary_election_2002.1.t
+        desc = hungary_election_2002.1.d
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = {tag = HUN AND = { communist > 0.30 social_democrat < 0.30 conservative < 0.30 } }
+	option = {
+	ai_chance = { factor = 100 }
+	name = Okay
+	set_politics = {
+	ruling_party = communist
+	elections_allowed = yes
+	}
+	} 
+	}
+	
+country_event = {
+	id = hungary_election_2002.2
+        title = hungary_election_2002.2.t
+        desc = hungary_election_2002.2.d
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { date > 2002.05.15 tag = HUN NOT = { has_country_flag = hun2002done } OR = { has_completed_focus = HUN_demandelection has_completed_focus = HUN_2002election } count_triggers = { amount = 1 
+	AND = { conservative > 0.38 social_democrat < 0.38 }
+	AND = { conservative > 0.35 social_democrat < 0.35 } 
+	AND = { conservative > 0.36 social_democrat < 0.36 }
+	AND = { conservative > 0.37 social_democrat < 0.37 }
+	AND = { conservative > 0.34 social_democrat < 0.34 }
+	AND = { conservative > 0.33 social_democrat < 0.33 }
+	AND = { conservative > 0.32 social_democrat < 0.32 }
+	AND = { conservative > 0.31 social_democrat < 0.31 }
+	AND = { conservative > 0.30 social_democrat < 0.30 }
+	AND = { conservative > 0.4 social_democrat < 0.4 }
+	AND = { conservative > 0.41 social_democrat < 0.41 }
+	AND = { conservative > 0.42 social_democrat < 0.42 }
+	AND = { conservative > 0.43 social_democrat < 0.43 }
+	AND = { conservative > 0.44 social_democrat < 0.44 }
+	AND = { conservative > 0.45 social_democrat < 0.45 }	
+	AND = { conservative > 0.3 social_democrat < 0.3 reactionary < 0.3 communist < 0.3 } } }
+	option = {
+	ai_chance = { factor = 100 }
+	name = Okay
+	add_country_flag = hun2002done
+	set_politics = {
+	ruling_party = conservative
+	elections_allowed = yes
+	}
+	} 
+	}
+
+country_event = {
+	id = hungary_election_2002.3
+        title = hungary_election_2002.3.t
+        desc = hungary_election_2002.3.d
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { date > 2002.05.15
+	tag = HUN
+	NOT = { has_country_flag = hun2002done }
+	OR = { has_completed_focus = HUN_demandelection has_completed_focus = HUN_2002election } 
+	count_triggers = { amount = 1 
+	AND = { conservative < 0.3 social_democrat > 0.3 reactionary < 0.3 }
+	AND = { conservative < 0.31 social_democrat > 0.32 reactionary < 0.31 }	
+	AND = { conservative < 0.32 social_democrat > 0.32 reactionary < 0.32 }
+	AND = { conservative < 0.33 social_democrat > 0.33 reactionary < 0.33 }
+	AND = { conservative < 0.34 social_democrat > 0.34 reactionary < 0.34 }
+	AND = { conservative < 0.35 social_democrat > 0.35 reactionary < 0.35 }
+	AND = { conservative < 0.36 social_democrat > 0.36 reactionary < 0.36 }
+	AND = { conservative < 0.37 social_democrat > 0.37 reactionary < 0.37 }
+	AND = { conservative < 0.38 social_democrat > 0.38 reactionary < 0.38 }
+	AND = { conservative < 0.39 social_democrat > 0.39 reactionary < 0.39 }
+	AND = { conservative < 0.4 social_democrat > 0.4 reactionary < 0.4 }
+	AND = { conservative < 0.41 social_democrat > 0.41 reactionary < 0.41 }
+	AND = { conservative < 0.42 social_democrat > 0.42 reactionary < 0.42 }
+	AND = { conservative < 0.43 social_democrat > 0.43 reactionary < 0.43 }
+	AND = { conservative < 0.44 social_democrat > 0.44 reactionary < 0.44 }
+	AND = { conservative < 0.45 social_democrat > 0.45 reactionary < 0.45 }
+	AND = { conservative < 0.46 social_democrat > 0.46 reactionary < 0.46 }
+	AND = { conservative < 0.47 social_democrat > 0.47 reactionary < 0.47 }
+	AND = { conservative < 0.48 social_democrat > 0.48 reactionary < 0.48 }
+	AND = { conservative < 0.49 social_democrat > 0.49 reactionary < 0.49 }
+	}
+	}
+	option = {
+	ai_chance = { factor = 100 }
+	name = Okay
+	set_politics = {
+	ruling_party = social_democrat
+	elections_allowed = yes
+	}
+	add_country_flag = hun2002done
+	} 
+	}
+
+add_namespace = hungary_election_2006
+
+	country_event = {
+	id = hungary_election_2006.2
+        title = hungary_election_2006.2.t
+        desc = hungary_election_2006.2.d
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { date > 2006.05.15 tag = HUN NOT = { has_country_flag = hun2002done } OR = { has_completed_focus = HUN_demandelection has_completed_focus = HUN_2002election } count_triggers = { amount = 1 
+	AND = { reactionary > 0.38 social_democrat < 0.38 }
+	AND = { reactionary > 0.35 social_democrat < 0.35 } 
+	AND = { reactionary > 0.36 social_democrat < 0.36 }
+	AND = { reactionary > 0.37 social_democrat < 0.37 }
+	AND = { reactionary > 0.34 social_democrat < 0.34 }
+	AND = { reactionary > 0.33 social_democrat < 0.33 }
+	AND = { reactionary > 0.32 social_democrat < 0.32 }
+	AND = { reactionary > 0.31 social_democrat < 0.31 }
+	AND = { reactionary > 0.30 social_democrat < 0.30 }
+	AND = { reactionary > 0.4 social_democrat < 0.4 }
+	AND = { reactionary > 0.41 social_democrat < 0.41 }
+	AND = { reactionary > 0.42 social_democrat < 0.42 }
+	AND = { reactionary > 0.43 social_democrat < 0.43 }
+	AND = { reactionary > 0.44 social_democrat < 0.44 }
+	AND = { reactionary > 0.45 social_democrat < 0.45 }	
+	AND = { reactionary > 0.3 social_democrat < 0.3 reactionary < 0.3 communist < 0.3 } } }
+	option = {
+	ai_chance = { factor = 100 }
+	name = Okay
+	add_country_flag = hun2006done
+	set_politics = {
+	ruling_party = reactionary
+	elections_allowed = yes
+	}
+	} 
+	}
+
+country_event = {
+	id = hungary_election_2002.3
+        title = hungary_election_2002.3.t
+        desc = hungary_election_2002.3.d
+	fire_only_once = yes
+        mean_time_to_happen = { days = 1 }
+	is_triggered_only = no
+	trigger = { date > 2006.05.15
+	tag = HUN
+	NOT = { has_country_flag = hun2006done }
+	OR = { has_completed_focus = HUN_demandelection has_completed_focus = HUN_2002election } 
+	count_triggers = { amount = 1 
+	AND = { conservative < 0.3 social_democrat > 0.3 reactionary < 0.3 }
+	AND = { conservative < 0.31 social_democrat > 0.32 reactionary < 0.31 }	
+	AND = { conservative < 0.32 social_democrat > 0.32 reactionary < 0.32 }
+	AND = { conservative < 0.33 social_democrat > 0.33 reactionary < 0.33 }
+	AND = { conservative < 0.34 social_democrat > 0.34 reactionary < 0.34 }
+	AND = { conservative < 0.35 social_democrat > 0.35 reactionary < 0.35 }
+	AND = { conservative < 0.36 social_democrat > 0.36 reactionary < 0.36 }
+	AND = { conservative < 0.37 social_democrat > 0.37 reactionary < 0.37 }
+	AND = { conservative < 0.38 social_democrat > 0.38 reactionary < 0.38 }
+	AND = { conservative < 0.39 social_democrat > 0.39 reactionary < 0.39 }
+	AND = { conservative < 0.4 social_democrat > 0.4 reactionary < 0.4 }
+	AND = { conservative < 0.41 social_democrat > 0.41 reactionary < 0.41 }
+	AND = { conservative < 0.42 social_democrat > 0.42 reactionary < 0.42 }
+	AND = { conservative < 0.43 social_democrat > 0.43 reactionary < 0.43 }
+	AND = { conservative < 0.44 social_democrat > 0.44 reactionary < 0.44 }
+	AND = { conservative < 0.45 social_democrat > 0.45 reactionary < 0.45 }
+	AND = { conservative < 0.46 social_democrat > 0.46 reactionary < 0.46 }
+	AND = { conservative < 0.47 social_democrat > 0.47 reactionary < 0.47 }
+	AND = { conservative < 0.48 social_democrat > 0.48 reactionary < 0.48 }
+	AND = { conservative < 0.49 social_democrat > 0.49 reactionary < 0.49 }
+	}
+	}
+	option = {
+	ai_chance = { factor = 100 }
+	name = Okay
+	set_politics = {
+	ruling_party = social_democrat
+	elections_allowed = yes
+	}
+	add_country_flag = hun2006done
+	} 
+	}
+
+add_namespace = hungary_border_conflict
+
+				country_event = {
+	id = hungary_border_conflict.1
+		title = hungary_border_conflict.1.t
+		desc = hungary_border_conflict.1.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 40 }
+	name = hungary_border_conflict.1.a
+	add_country_flag = hun2002done
+	HUN = { add_stability = 0.05 }
+	HUN = { transfer_state = 73 }
+	}
+	}
+	
+					country_event = {
+	id = hungary_border_conflict.2
+		title = hungary_border_conflict.2.t
+		desc = hungary_border_conflict.2.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = {
+	ai_chance = { factor = 40 }
+	name = hungary_border_conflict.2.a
+	HUN = { add_stability = -0.05 }
+	}
+	}
+	
+add_namespace = habsburg_collapse
+
+				country_event = {
+	id = habsburg_collapse.1
+		title = habsburg_collapse.1.t
+		desc = habsburg_collapse.1.d
+		
+	fire_only_once = yes
+		mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+		option = {
+	ai_chance = { factor = 40 }
+	name = habsburg_collapse.1.a
+	HUN = { add_stability = 0.05 
+	set_autonomy = {
+    target = SLO
+    autonomy_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+    target = TRS
+    autonomy_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+    target = GAL
+    autonomy_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+    target = RRT
+    autonomy_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+    target = BAN
+    autonomy_state = autonomy_integrated_puppet
+	}
+ }
+	SLO = { 
+	transfer_state = 70
+	transfer_state = 71
+	transfer_state = 932
+	}
+	TRS = { 
+	transfer_state = 83
+	transfer_state = 84
+	transfer_state = 76
+	transfer_state = 937
+	transfer_state = 922
+	transfer_state = 80
+	transfer_state = 927
+	}
+	GAL = { 
+	transfer_state = 88
+	}
+	RRT = { 
+	transfer_state = 91
+	transfer_state = 89
+	}
+	BAN = {
+	transfer_state = 918
+	transfer_state = 82
+	}
+	}
+	}
+	
+
+	
+	

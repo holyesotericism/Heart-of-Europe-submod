@@ -1,0 +1,171 @@
+spriteTypes = { 
+	
+	SpriteType = {
+	name = "GFX_gypsies"
+	texturefile = "gfx/interface/goals/gypsies.dds"
+	}	
+	SpriteType = {
+	name = "GFX_gypsies_bad"
+	texturefile = "gfx/interface/goals/gypsies_bad.dds"
+	}
+	SpriteType = {
+	name = "GFX_hun_nationalist"
+	texturefile = "gfx/interface/goals/national_hun.dds"
+	}
+	SpriteType = {
+	name = "GFX_rom_nationalist"
+	texturefile = "gfx/interface/goals/national_rom.dds"
+	}
+	SpriteType = {
+	name = "GFX_pm4life"
+	texturefile = "gfx/interface/goals/pm4life.dds"
+	}
+	SpriteType = {
+	name = "GFX_kadar"
+	texturefile = "gfx/interface/goals/kadar.dds"
+	}
+	SpriteType = {
+	name = "GFX_army_placeholder"
+	texturefile = "gfx/interface/goals/army_placeholder.dds"
+	}
+	SpriteType = {
+	name = "GFX_hunpolitics"
+	texturefile = "gfx/interface/goals/hun_politics.dds"
+	}
+	SpriteType = {
+	name = "GFX_polandfriend"
+	texturefile = "gfx/interface/goals/align_to_poland.dds"
+	}
+	SpriteType = {
+	name = "GFX_hunprivatisation"
+	texturefile = "gfx/interface/goals/privatisation.dds"
+	}
+	SpriteType = {
+	name = "GFX_romarmy"
+	texturefile = "gfx/interface/goals/army_romania.dds"
+	}
+	SpriteType = {
+	name = GFX_eu_generic
+	texturefile = "gfx/interface/goals/generic_eu.dds"
+	}
+	SpriteType = {
+	name = "GFX_hun_landowners"
+	texturefile = "gfx/interface/goals/landowner.dds"
+	}
+	SpriteType = {
+	name = GFX_eupay
+	texturefile = "gfx/interface/goals/generic_eu_money.dds"
+	}
+	SpriteType = {
+	name = GFX_eudiplomacy
+	texturefile = "gfx/interface/goals/generic_eu_diplomacy.dds"
+	}
+	SpriteType = {
+	name = GFX_100steps
+	texturefile = "gfx/interface/goals/100_step_plan.dds"
+	}
+	SpriteType = {
+	name = GFX_100days1
+	texturefile = "gfx/interface/goals/100_day_program_1.dds"
+	}
+	SpriteType = {
+	name = GFX_100days2
+	texturefile = "gfx/interface/goals/100_day_program_2.dds"
+	}
+	SpriteType = {
+	name = GFX_hun_healthcare
+	texturefile = "gfx/interface/goals/healthcare_reform.dds"
+	}
+	SpriteType = {
+	name = GFX_gyurcsanypack
+	texturefile = "gfx/interface/goals/gyurcsany_pack.dds"
+	}
+	SpriteType = {
+	name = GFX_reorganise
+	texturefile = "gfx/interface/goals/reorganize_the_government.dds"
+	}
+	SpriteType = {
+	name = GFX_hun_education
+	texturefile = "gfx/interface/goals/education_reform.dds"
+	}
+	SpriteType = {
+	name = "GFX_medgyessy"
+	texturefile = "gfx/interface/goals/medgyessy.dds"
+	}
+	SpriteType = {
+	name = GFX_glorymonarchy
+	texturefile = "gfx/interface/goals/hun_glorymonarchy.dds"
+	}
+	SpriteType = {
+	name = "GFX_comindustry"
+	texturefile = "gfx/interface/goals/comindustry.dds"
+	}
+	SpriteType = {
+	name = "GFX_path_of_equality"
+	texturefile = "gfx/interface/goals/pathofequality.dds"
+	}
+	SpriteType = {
+	name = "GFX_path_of_the_republic"
+	texturefile = "gfx/interface/goals/pathoftherepublic.dds"
+	}
+	SpriteType = {
+	name = "GFX_path_of_the_empire"
+	texturefile = "gfx/interface/goals/pathoftheempire.dds"
+	}
+	SpriteType = {
+	name = "GFX_thurmers_regime"
+	texturefile = "gfx/interface/goals/thurmersregime.dds"
+	}
+	SpriteType = {
+	name = "GFX_election"
+	texturefile = "gfx/interface/goals/election.dds"
+	}
+	SpriteType = {
+	name = "GFX_fidesz"
+	texturefile = "gfx/interface/goals/fidesz.dds"
+	}
+	SpriteType = {
+	name = "GFX_mszp"
+	texturefile = "gfx/interface/goals/mszp.dds"
+	}
+	SpriteType = {
+	name = "GFX_orbangov"
+	texturefile = "gfx/interface/goals/orbangov.dds"
+	}
+	SpriteType = {
+	name = "GFX_imperialrestoration"
+	texturefile = "gfx/interface/goals/imperialrestoration.dds"
+	}
+	SpriteType = {
+	name = "GFX_gyurcsanysgov"
+	texturefile = "gfx/interface/goals/gyurcsanysgov.dds"
+	}
+	SpriteType = {
+	name = "GFX_peoplesrepublic"
+	texturefile = "gfx/interface/goals/peoplesrepublic.dds"
+	}
+	SpriteType = {
+	name = "GFX_hunchina"
+	texturefile = "gfx/interface/goals/china.dds"
+	}
+	SpriteType = {
+	name = "GFX_hunrussia"
+	texturefile = "gfx/interface/goals/russia.dds"
+	}
+	SpriteType = {
+	name = "GFX_trianon"
+	texturefile = "gfx/interface/goals/trianon.dds"
+	}
+	SpriteType = {
+	name = "GFX_habsburg"
+	texturefile = "gfx/interface/goals/habsburg.dds"
+	}
+	SpriteType = {
+	name = "GFX_hunarmy1"
+	texturefile = "gfx/interface/goals/army1.dds"
+	}
+	SpriteType = {
+	name = "GFX_communism"
+	texturefile = "gfx/interface/goals/communism.dds"
+	}
+ }

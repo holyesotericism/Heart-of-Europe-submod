@@ -1,0 +1,13 @@
+reintegrate_slovakia = {
+     icon = generic_prospect_for_resources
+     available = { 
+	 OR = {
+          NOT = {
+    country_exists = SLO
+   
+}
+ HUN = { has_full_control_of_state = 664 }
+	SLO = { is_puppet_of = HUN }
+}
+     }
+}

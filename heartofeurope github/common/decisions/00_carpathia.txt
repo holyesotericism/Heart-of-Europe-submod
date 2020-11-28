@@ -1,0 +1,88 @@
+carpathia = {
+
+	carpathia = 
+	{ fire_only_once = yes
+	 available =
+	{ 
+	has_full_control_of_state = 935
+	has_full_control_of_state = 920
+	has_full_control_of_state = 155
+	has_full_control_of_state = 43
+	has_full_control_of_state = 921
+	has_full_control_of_state = 936
+	has_full_control_of_state = 154
+	has_full_control_of_state = 934
+	has_full_control_of_state = 82
+	has_full_control_of_state = 83
+	has_full_control_of_state = 922
+	has_full_control_of_state = 937
+	has_full_control_of_state = 76
+	has_full_control_of_state = 919
+	has_full_control_of_state = 84
+	has_full_control_of_state = 81
+	has_full_control_of_state = 46
+	has_full_control_of_state = 927
+	has_full_control_of_state = 79
+	has_full_control_of_state = 929
+	has_full_control_of_state = 928
+	has_full_control_of_state = 899
+
+
+
+
+	}
+	
+	visible = { OR = { tag = HUN tag = ROM } }
+	 complete_effect = { 
+	 add_state_core = 935
+	add_state_core = 920
+	add_state_core = 155
+	add_state_core = 43
+	add_state_core = 921
+	add_state_core = 936
+	add_state_core = 154
+	add_state_core = 934
+	add_state_core = 82
+	add_state_core = 83
+	add_state_core = 922
+	add_state_core = 937
+	add_state_core = 76
+	add_state_core = 919
+	add_state_core = 84
+	add_state_core = 81
+	add_state_core = 46
+	add_state_core = 927
+	add_state_core = 79
+	add_state_core = 929
+	add_state_core = 928
+	add_state_core = 899
+	add_state_core = 664
+	add_state_core = 931
+	add_state_core = 73
+	add_state_core = 70
+	add_state_core = 71
+	add_state_core = 932
+	add_state_core = 924
+	add_state_core = 925
+	add_state_core = 923
+	add_state_core = 943
+	add_state_core = 45
+	add_state_core = 918
+	add_state_core = 926
+	add_state_core = 77
+	add_state_core = 806
+	add_state_core = 78
+	add_state_core = 80
+	add_state_core = 89
+
+	set_cosmetic_tag = CARP
+	}	
+	}
+
+	
+
+
+
+
+
+}

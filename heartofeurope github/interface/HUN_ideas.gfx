@@ -1,0 +1,35 @@
+SpriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_otto_von_habsburg"
+		texturefile = "gfx/interface/ideas/hungary/hun_otto_von.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gypsies"
+		texturefile = "gfx/interface/ideas/hungary/hun_gypsies.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_corruption"
+		texturefile = "gfx/interface/ideas/corruption.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_debt"
+		texturefile = "gfx/interface/ideas/national_debt.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_unemployment"
+		texturefile = "gfx/interface/ideas/unemployment.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_welfare_state"
+		texturefile = "gfx/interface/ideas/welfare_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_communism_prosper"
+		texturefile = "gfx/interface/ideas/communism_prosper.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_communism_fade"
+		texturefile = "gfx/interface/ideas/communism_fade.dds"
+	}	
+}	

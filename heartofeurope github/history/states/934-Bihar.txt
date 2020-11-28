@@ -1,0 +1,25 @@
+state={
+	id=934
+	name="STATE_934"
+	provinces={
+		730 3730 6735 9706 11659 
+	}
+history = {
+
+owner = HUN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+}
+		victory_points = {
+			11659 10
+		}
+		victory_points = {
+			3730 1
+		}
+add_core_of = HUN
+}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=state_level_3
+}

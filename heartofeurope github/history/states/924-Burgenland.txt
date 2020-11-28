@@ -1,0 +1,25 @@
+state={
+	id=924
+	name="STATE_924"
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+
+		buildings = {
+			infrastructure = 7
+
+		}
+		victory_points = {
+			3700 8
+		}
+	}
+
+	provinces={
+		3700 9661 11630 
+	}
+	
+	manpower=279623
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
+}
